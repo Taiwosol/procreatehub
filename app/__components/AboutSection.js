@@ -21,7 +21,7 @@ export default function AboutSection() {
           {/* Left Column: Text */}
           <div className="flex-1 space-y-6 text-gray-600 leading-relaxed text-sm md:text-base">
             <p>
-              Procr8 Hub Ltd. is a prints and branding firm with up-to-date
+              ProCr8Hub Ltd. is a prints and branding firm with up-to-date
               professionals delivering impeccable prints, branding, and
               packaging solutions to individuals, businesses, and corporate
               organizations nationwide.

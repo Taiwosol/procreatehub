@@ -1,9 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import Image from "next/image";
 import FooterDark from "../__components/FooterDark";
-import contactImg from "../../public/contact-image.png";
 import { sendInquiry } from "./actions";
 
 export default function Page() {
@@ -150,21 +148,6 @@ export default function Page() {
               )}
             </div>
           </form>
-        </div>
-      </section>
-
-      {/* Contact Image */}
-      <section className="px-10 pb-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="relative w-full h-screen overflow-hidden rounded-sm">
-            <Image
-              src={contactImg}
-              fill
-              className="object-cover"
-              alt="Contact"
-              placeholder="blur"
-            />
-          </div>
         </div>
       </section>
 

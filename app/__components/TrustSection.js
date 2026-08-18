@@ -81,7 +81,7 @@ export default function TrustSection() {
   return (
     <section
       ref={sectionRef}
-      className="pt-4 md:pt-6 pb-6 md:pb-10 px-4 sm:px-6 lg:px-8 bg-white"
+      className="parkinsans pt-4 md:pt-6 pb-6 md:pb-10 px-4 sm:px-6 lg:px-8 bg-white"
     >
       <div className="max-w-7xl mx-auto">
         <div className="space-y-6">
@@ -89,11 +89,10 @@ export default function TrustSection() {
             <h2 className="text-3xl md:text-5xl lg:text-[54px] font-medium leading-[1.1] max-w-6xl tracking-tight text-black">
               Trusted by Businesses Across Nigeria
             </h2>
-            <p className="text-gray-600 leading-relaxed text-sm md:text-base lg:max-w-[560px] xl:max-w-[620px]">
-              At ProCr8 Hub, we partner with businesses of all sizes to deliver
-              exceptional printing and branding solutions. Our commitment to
-              quality and innovation has made us the go-to choice for
-              organizations seeking to elevate their brand presence.
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base lg:max-w-[480px] xl:max-w-[540px]">
+              From startups to established institutions, 500+ projects delivered
+              nationwide with consistent quality, on-time turnaround, and
+              end-to-end production you can count on.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-6 mt-10 lg:grid-cols-4">

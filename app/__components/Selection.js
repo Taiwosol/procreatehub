@@ -4,68 +4,55 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import Image from "next/image";
 
-import consultationImg from "../../public/consultation-image.png";
-import photographyDirectionImg from "../../public/photography-direction-image.jpg";
-import shootsImg from "../../public/shoots-image.png";
-import brandCampaignImg from "../../public/brand-campaign-image.png";
-import productionImg from "../../public/production-image.png";
-import studioOutdoorImg from "../../public/studio-outdoor-image.png";
-import retouchingImg from "../../public/retouching-image.png";
-import postProcessingImg from "../../public/post-processing-image.png";
-import designImg from "../../public/design-image.png";
-import protographyUxImg from "../../public/protography-ux-image.png";
-import artImg from "../../public/art-image.png";
-import creativeLightingImg from "../../public/creative-lighting-image.png";
-
 const selections = [
   {
     id: 1,
     number: "01",
-    title: "Photography Direction & Consultation",
-    smallImageLabel: "Consultation",
-    smallImage: consultationImg,
-    largeImage: photographyDirectionImg,
+    title: "Production, Sales and Procurement",
+    smallImageLabel: "Custom Apparel",
+    smallImage: "/selection-img-02.jpg",
+    largeImage: "/selection-img-01.jpg",
   },
   {
     id: 2,
     number: "02",
-    title: "Brand Campaign & Editorial Shoots",
-    smallImageLabel: "Shoots",
-    smallImage: shootsImg,
-    largeImage: brandCampaignImg,
+    title: "Vehicle Branding",
+    smallImageLabel: "Branding",
+    smallImage: "/selection-img-04.jpg",
+    largeImage: "/selection-img-03.jpg",
   },
   {
     id: 3,
     number: "03",
-    title: "Studio & Outdoor Production",
-    smallImageLabel: "Production",
-    smallImage: productionImg,
-    largeImage: studioOutdoorImg,
+    title: "Production, Procurement and Branding",
+    smallImageLabel: "Signages",
+    smallImage: "/selection-img-06.jpg",
+    largeImage: "/selection-img-05.jpg",
   },
   {
     id: 4,
     number: "04",
-    title: "Post-Processing & Retouching",
-    smallImageLabel: "Retouching",
-    smallImage: retouchingImg,
-    largeImage: postProcessingImg,
+    title: "Production, Packaging and Sales",
+    smallImageLabel: "Souvenirs",
+    smallImage: "/selection-img-08.jpg",
+    largeImage: "/selection-img-07.jpg",
   },
   {
     id: 5,
     number: "05",
-    title: "Photography UX/UI Design",
-    smallImageLabel: "Design",
-    smallImage: designImg,
-    largeImage: protographyUxImg,
+    title: "Procurement, Sales and Packaging",
+    smallImageLabel: "Corporate Gift",
+    smallImage: "/selection-img-10.jpg",
+    largeImage: "/selection-img-09.jpg",
   },
-  {
-    id: 6,
-    number: "06",
-    title: "Creative Lighting & Art Direction",
-    smallImageLabel: "Art",
-    smallImage: artImg,
-    largeImage: creativeLightingImg,
-  },
+  // {
+  //   id: 6,
+  //   number: "06",
+  //   title: "Creative Lighting & Art Direction",
+  //   smallImageLabel: "Art",
+  //   smallImage: artImg,
+  //   largeImage: creativeLightingImg,
+  // },
 ];
 
 export default function Selection() {
@@ -97,28 +84,26 @@ export default function Selection() {
               <p className="text-sm text-gray-600">
                 {selection.smallImageLabel}
               </p>
-              <div className="relative w-full max-w-xs aspect-[16/9] overflow-hidden rounded-sm">
+              <div className="relative w-full max-w-xs aspect-[16/9] overflow-hidden rounded-sm bg-neutral-100">
                 <Image
                   src={selection.smallImage}
                   alt={selection.smallImageLabel}
                   fill
-                  className="object-cover"
-                  placeholder="blur"
+                  className="object-contain"
                 />
               </div>
             </div>
           </div>
 
           {/* Right Large Image */}
-          <div className="w-full md:w-1/2 h-full">
+          <div className="w-full md:w-1/2 h-full bg-neutral-100">
             <div className="relative w-full h-full">
               <Image
                 src={selection.largeImage}
                 alt={selection.title}
                 fill
                 priority={selection.id === 1}
-                className="object-cover"
-                placeholder="blur"
+                className="object-contain"
               />
             </div>
           </div>

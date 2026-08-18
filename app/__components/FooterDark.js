@@ -1,72 +1,117 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function FooterDark() {
   const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle newsletter subscription
     console.log("Newsletter subscription:", { email });
     setEmail("");
+    setSubscribed(true);
   };
+
+  useEffect(() => {
+    if (!subscribed) return;
+    const t = setTimeout(() => setSubscribed(false), 6000);
+    return () => clearTimeout(t);
+  }, [subscribed]);
+
+  const Check = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={3}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="w-5 h-5 shrink-0"
+    >
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  );
 
   return (
     <footer className="bg-white py-0 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Newsletter Section (Black & White) */}
-        <div className="bg-black border-t border-b border-white/10 py-6 md:py-8 px-4 sm:px-6 lg:px-8 -mx-4 sm:-mx-6 lg:-mx-8 mb-0">
+        {/* Newsletter Section (Ash / Light Gray) */}
+        <div className="bg-neutral-300 border-t border-b border-neutral-400/50 py-6 md:py-8 px-4 sm:px-6 lg:px-8 -mx-4 sm:-mx-6 lg:-mx-8 mb-0">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
               {/* Left Column: Newsletter Heading & Copy */}
               <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.05] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-950 leading-[1.05] tracking-tight">
                   Subscribe to
                   <br />
                   our newsletter
                 </h2>
-                <p className="text-gray-300 text-lg leading-8 max-w-xl">
+                <p className="text-gray-700 text-lg leading-8 max-w-xl">
                   Join our newsletter to get exclusive insights, timely updates,
                   and expert tips that help you take control of your
                   brand&apos;s growth, visibility, and creative direction.
                 </p>
               </div>
 
-              {/* Right Column: Newsletter Form */}
-              <div className="space-y-4">
-                <h3 className="text-lg md:text-xl font-bold text-white/90 tracking-wide">
-                  Stay Informed
-                </h3>
-                <form
-                  onSubmit={handleSubmit}
-                  className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
-                >
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 px-5 py-4 rounded-full bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-base"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="shrink-0 bg-white hover:bg-gray-200 text-black font-black px-8 py-4 rounded-full transition-colors duration-300 cursor-pointer tracking-normal text-base"
+              {/* Right Column: Newsletter Form or Success */}
+              <div className="space-y-4 min-h-[160px]">
+                {subscribed ? (
+                  <div
+                    role="status"
+                    aria-live="polite"
+                    className="flex items-start gap-3 rounded-2xl border border-emerald-500/40 bg-emerald-50/90 px-5 py-4 shadow-sm animate-[fadeIn_.35s_ease-out]"
                   >
-                    Subscribe
-                  </button>
-                </form>
-                <p className="text-gray-400 text-sm leading-6">
-                  By subscribing you agree to our{" "}
-                  <Link
-                    href="/terms"
-                    className="text-white underline underline-offset-2 hover:no-underline cursor-pointer"
-                  >
-                    Privacy Policy
-                  </Link>
-                </p>
+                    <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white shadow-md shadow-emerald-600/20">
+                      <Check />
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-base font-black text-emerald-900 leading-tight">
+                        You&apos;re in! Welcome aboard.
+                      </p>
+                      <p className="text-sm font-medium text-emerald-800/90 leading-relaxed">
+                        Thanks for subscribing — keep an eye on your inbox for
+                        exclusive updates, brand insights, and creative tips.
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 tracking-wide">
+                      Stay Informed
+                    </h3>
+                    <form
+                      onSubmit={handleSubmit}
+                      className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
+                    >
+                      <input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        className="flex-1 px-5 py-4 rounded-full bg-white text-gray-950 placeholder-gray-500 border border-neutral-400/60 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent text-base"
+                        required
+                      />
+                      <button
+                        type="submit"
+                        className="shrink-0 bg-gray-900 hover:bg-black text-white font-black px-8 py-4 rounded-full transition-colors duration-300 cursor-pointer tracking-normal text-base shadow-sm hover:shadow-md"
+                      >
+                        Subscribe
+                      </button>
+                    </form>
+                    <p className="text-gray-600 text-sm leading-6">
+                      By subscribing you agree to our{" "}
+                      <Link
+                        href="/terms"
+                        className="text-gray-900 underline underline-offset-2 hover:no-underline cursor-pointer font-semibold"
+                      >
+                        Privacy Policy
+                      </Link>
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>

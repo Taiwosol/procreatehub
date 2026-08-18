@@ -337,27 +337,27 @@ export default function HeroPremium() {
 
   const scrollY = useMotionValue(0);
 
-  const p1x = useTransform(scrollY, [0, 600], [0, -18]);
-  const p1y = useTransform(scrollY, [0, 600], [0, 36]);
-  const p2x = useTransform(scrollY, [0, 600], [0, 16]);
-  const p2y = useTransform(scrollY, [0, 600], [0, 44]);
-  const p3x = useTransform(scrollY, [0, 600], [0, -10]);
-  const p3y = useTransform(scrollY, [0, 600], [0, 52]);
-  const p4x = useTransform(scrollY, [0, 600], [0, -22]);
-  const p4y = useTransform(scrollY, [0, 600], [0, 40]);
-  const p5x = useTransform(scrollY, [0, 600], [0, 20]);
-  const p5y = useTransform(scrollY, [0, 600], [0, 58]);
+  const p1x = useTransform(scrollY, [0, 600], [0, -12]);
+  const p1y = useTransform(scrollY, [0, 600], [0, 18]);
+  const p2x = useTransform(scrollY, [0, 600], [0, 10]);
+  const p2y = useTransform(scrollY, [0, 600], [0, 22]);
+  const p3x = useTransform(scrollY, [0, 600], [0, -6]);
+  const p3y = useTransform(scrollY, [0, 600], [0, 28]);
+  const p4x = useTransform(scrollY, [0, 600], [0, -14]);
+  const p4y = useTransform(scrollY, [0, 600], [0, 20]);
+  const p5x = useTransform(scrollY, [0, 600], [0, 12]);
+  const p5y = useTransform(scrollY, [0, 600], [0, 32]);
 
-  const b1x = useTransform(scrollY, [0, 600], [0, -14]);
-  const b1y = useTransform(scrollY, [0, 600], [0, 28]);
-  const b2x = useTransform(scrollY, [0, 600], [0, 16]);
-  const b2y = useTransform(scrollY, [0, 600], [0, 34]);
-  const b3x = useTransform(scrollY, [0, 600], [0, -18]);
-  const b3y = useTransform(scrollY, [0, 600], [0, 42]);
-  const b4x = useTransform(scrollY, [0, 600], [0, 8]);
-  const b4y = useTransform(scrollY, [0, 600], [0, 50]);
+  const b1x = useTransform(scrollY, [0, 600], [0, -8]);
+  const b1y = useTransform(scrollY, [0, 600], [0, 14]);
+  const b2x = useTransform(scrollY, [0, 600], [0, 10]);
+  const b2y = useTransform(scrollY, [0, 600], [0, 18]);
+  const b3x = useTransform(scrollY, [0, 600], [0, -10]);
+  const b3y = useTransform(scrollY, [0, 600], [0, 22]);
+  const b4x = useTransform(scrollY, [0, 600], [0, 5]);
+  const b4y = useTransform(scrollY, [0, 600], [0, 26]);
 
-  const textScrollY = useTransform(scrollY, [0, 600], [0, 70]);
+  const textScrollY = useTransform(scrollY, [0, 600], [0, 20]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -461,14 +461,6 @@ export default function HeroPremium() {
           { opacity: 1, duration: 1, delay: 1.8, ease: "power2.out" },
         );
       }
-      const scrollInd = scrollIndicatorRef.current;
-      if (scrollInd) {
-        gsap.fromTo(
-          scrollInd,
-          { opacity: 0, y: 10 },
-          { opacity: 1, y: 0, duration: 1, delay: 2, ease: "power2.out" },
-        );
-      }
 
       if (collageRef.current && typeof window !== "undefined") {
         gsap.to(collageRef.current, {
@@ -478,7 +470,7 @@ export default function HeroPremium() {
             end: "bottom top",
             scrub: true,
           },
-          yPercent: -4.5,
+          yPercent: -1.5,
           ease: "none",
         });
       }
@@ -490,7 +482,7 @@ export default function HeroPremium() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen w-full bg-white overflow-hidden isolate"
+      className="parkinsans relative min-h-screen w-full bg-white overflow-hidden isolate"
       style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
     >
       <div className="pointer-events-none absolute inset-0 overflow-hidden -z-10">
@@ -871,35 +863,6 @@ export default function HeroPremium() {
           </span>
         </div>
       </div>
-
-      <AnimatePresence>
-        <motion.div
-          ref={scrollIndicatorRef}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 hidden lg:block"
-          style={{ opacity: 0 }}
-        >
-          <motion.div
-            className="flex flex-col items-center gap-2 text-gray-400"
-            animate={{ y: [0, 6, 0] }}
-            transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-          >
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em]">
-              Scroll
-            </span>
-            <span className="inline-flex items-center justify-center w-6 h-10 rounded-full border-2 border-gray-300">
-              <motion.span
-                className="block w-1 h-2 bg-gray-500 rounded-full"
-                animate={{ y: [-6, 6, -6] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 2.2,
-                  ease: "easeInOut",
-                }}
-              />
-            </span>
-          </motion.div>
-        </motion.div>
-      </AnimatePresence>
     </section>
   );
 }

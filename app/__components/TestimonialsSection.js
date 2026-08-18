@@ -21,9 +21,7 @@ export default function TestimonialsSection() {
             className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
           >
             <div className="md:order-2 space-y-2">
-              <div className="text-5xl md:text-6xl lg:text-7xl font-serif">
-                “
-              </div>
+              <div className="text-5xl md:text-6xl lg:text-7xl">“</div>
               <p className="text-xl md:text-2xl lg:text-[32px] font-medium leading-relaxed">
                 {testimonial.quote}
               </p>

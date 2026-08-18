@@ -23,6 +23,7 @@ const albums = [
       "Comprehensive brand identity systems — from logo design to complete visual guidelines — that define memorable impressions across all touchpoints.",
     genre: "Branding",
     image: "/branding-album-img.jpg",
+    mobileImage: "/branding-album-img-mobile.jpg",
     link: "/works/album/branding",
     index: "02",
   },
@@ -33,6 +34,7 @@ const albums = [
       "Creative packaging solutions that combine structural innovation with striking visuals to elevate products and stand out on shelves nationwide.",
     genre: "Packaging",
     image: "/packaging-album-img.jpg",
+    mobileImage: "/packaging-album-img-mobile.jpg",
     link: "/works/album/packaging",
     index: "03",
   },
@@ -43,6 +45,7 @@ const albums = [
       "Curated corporate gifts, custom merchandise, and end-to-end procurement services that leave lasting impressions on clients and employees alike.",
     genre: "Gifts",
     image: "/gift-album-img.jpg",
+    mobileImage: "/gift-album-img-mobile.jpg",
     link: "/works/album/gift-sales-procurement",
     index: "04",
   },
@@ -76,17 +79,32 @@ export default function GallerySection() {
                   alt={album.title}
                   fill
                   priority={album.id === 1}
-                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                  className="hidden md:block object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
+                {album.mobileImage && (
+                  <Image
+                    src={album.mobileImage}
+                    alt={album.title}
+                    fill
+                    priority={album.id === 1}
+                    className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                )}
+                {!album.mobileImage && (
+                  <Image
+                    src={album.image}
+                    alt={album.title}
+                    fill
+                    priority={album.id === 1}
+                    className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
+                  />
+                )}
 
                 {/* Overlay Content to match screenshots */}
                 <div className="absolute inset-0 p-10 flex flex-col justify-between text-white z-10 pointer-events-none">
                   {/* Top Section */}
                   <div className="flex justify-between items-start">
                     <div className="space-y-0.5">
-                      <p className="text-sm md:text-base font-medium opacity-80">
-                        2024
-                      </p>
                       <h3 className="text-4xl md:text-7xl font-bold tracking-tight leading-tight">
                         {album.title}
                       </h3>
