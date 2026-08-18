@@ -1,0 +1,264 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import FooterDark from "../../../__components/FooterDark";
+
+export default function Page() {
+  return (
+    <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-16 px-10">
+        <div className="max-w-7xl mx-auto">
+          {/* Desktop Top Row */}
+          <div className="hidden md:flex flex-row justify-between items-start mb-12">
+            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
+              (04)
+            </span>
+            <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
+              Gift Sales &amp; Procurement
+            </h1>
+            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
+              2025
+            </span>
+          </div>
+
+          {/* Mobile Top Row */}
+          <div className="flex md:hidden flex-row items-center gap-4 mb-8">
+            <span className="text-4xl font-medium">(04)</span>
+            <h1 className="text-4xl font-medium leading-[1.1] text-black tracking-tight">
+              Gift Sales &amp; Procurement
+            </h1>
+            <span className="text-4xl font-medium">2025</span>
+          </div>
+
+          {/* Desktop Bottom Row */}
+          <div className="hidden md:flex flex-col gap-8">
+            <div className="flex flex-row justify-between items-start">
+              <Link
+                href="/works"
+                className="text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity"
+              >
+                All Projects
+              </Link>
+              <p className="text-xs uppercase tracking-widest font-medium">
+                Gifts
+              </p>
+            </div>
+            <div className="flex flex-row justify-between items-start">
+              <p className="text-sm max-w-md">
+                Welcome to our Gift Sales &amp; Procurement showcase. We curate
+                premium corporate gifts, custom branded merchandise, and
+                end-to-end procurement services — helping organizations
+                celebrate, incentivize, and make lasting impressions across
+                multi-state operations.
+              </p>
+              <button
+                onClick={() => {
+                  window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: "smooth",
+                  });
+                }}
+                className="text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity flex items-center gap-2"
+              >
+                Scroll Down <span>↓</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Bottom Row */}
+          <div className="flex md:hidden flex-col gap-6">
+            <div className="flex flex-row justify-between items-center">
+              <Link
+                href="/works"
+                className="text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity"
+              >
+                ← All Projects
+              </Link>
+              <p className="text-xs uppercase tracking-widest font-medium">
+                Gifts
+              </p>
+            </div>
+            <p className="text-sm">
+              Welcome to our Gift Sales &amp; Procurement showcase. We curate
+              premium corporate gifts, custom branded merchandise, and
+              end-to-end procurement services for lasting impressions.
+            </p>
+            <button
+              onClick={() => {
+                window.scrollTo({
+                  top: document.documentElement.scrollHeight,
+                  behavior: "smooth",
+                });
+              }}
+              className="text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity flex items-center gap-2 self-start"
+            >
+              Scroll Down <span>↓</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Image 01 */}
+      <section className="pb-16">
+        <div className="relative w-full aspect-[16/9] overflow-hidden group">
+          <Image
+            src="/space-travel-image-01.png"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            alt="Curated corporate gift collection hero"
+          />
+        </div>
+      </section>
+
+      {/* Image 02 - 09 Grid */}
+      <section className="pb-16 px-6 md:px-20 lg:px-32">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div className="space-y-8">
+              <h2 className="text-2xl font-medium">
+                Concept &amp;
+                <br />
+                Gift Showcase
+              </h2>
+            </div>
+            <p className="text-lg">
+              Our gifting and procurement process begins with understanding the
+              occasion, recipient, and desired impression. We source globally
+              and locally to assemble collections that range from premium
+              executive gifts and custom-branded swag to bulk employee
+              appreciation kits. Every item is curated, branded, and packaged
+              with care, supported by transparent logistics for nationwide
+              rollouts.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-02.png"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Custom branded gift sets"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-03.png"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Corporate holiday gift boxes"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-04.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Premium executive gifts"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-05.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Employee appreciation kits"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-06.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Custom branded merchandise"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-07.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Event and conference swag"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-08.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Welcome onboarding packages"
+              />
+            </div>
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
+              <Image
+                src="/space-travel-image-09.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Award and recognition trophies"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* The Result Section */}
+      <section className="pb-16 px-6 md:px-20 lg:px-32">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <h2 className="text-2xl font-medium">The Result</h2>
+            <p className="text-lg">
+              The result is gifting and procurement that feels personal at
+              scale. Clients we work with report stronger employee engagement,
+              elevated brand perception at events, and meaningful client
+              retention through thoughtful, beautifully executed gifts. Our
+              turnkey service — from concept and sourcing to branding and
+              nationwide delivery — lets teams focus on their people while we
+              handle every detail.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Image 10 */}
+      <section className="pb-16">
+        <div className="relative w-full aspect-[16/9] overflow-hidden group">
+          <Image
+            src="/space-travel-image-10.jpg"
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+            alt="Full gift and procurement campaign"
+          />
+        </div>
+      </section>
+
+      {/* Next Project Section - loop back to first */}
+      <section className="pb-16 px-6 md:px-20 lg:px-32">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-medium mb-8">Next Project</h2>
+          <Link href="/works/album/printing-production" className="block">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-4 gap-4">
+              <span className="text-4xl md:text-6xl font-medium">1</span>
+              <h3 className="text-4xl md:text-6xl font-medium">
+                Printing Production
+              </h3>
+              <span className="text-4xl md:text-6xl font-medium">2024</span>
+            </div>
+            <div className="relative w-full aspect-[16/9] overflow-hidden group">
+              <Image
+                src="/printing-album-img.jpg"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                alt="Printing production project preview"
+              />
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <FooterDark />
+    </main>
+  );
+}
