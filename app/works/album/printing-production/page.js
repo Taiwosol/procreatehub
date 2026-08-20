@@ -12,24 +12,20 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           {/* Desktop Top Row */}
           <div className="hidden md:flex flex-row justify-between items-start mb-12">
-            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
+            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium text-black">
               (01)
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
               Printing Production
             </h1>
-            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
-              2024
-            </span>
           </div>
 
           {/* Mobile Top Row */}
           <div className="flex md:hidden flex-row items-center gap-4 mb-8">
-            <span className="text-4xl font-medium">(01)</span>
+            <span className="text-4xl font-medium text-black">(01)</span>
             <h1 className="text-4xl font-medium leading-[1.1] text-black tracking-tight">
               Printing Production
             </h1>
-            <span className="text-4xl font-medium">2024</span>
           </div>
 
           {/* Desktop Bottom Row */}
@@ -41,12 +37,12 @@ export default function Page() {
               >
                 All Projects
               </Link>
-              <p className="text-xs uppercase tracking-widest font-medium">
+              <p className="text-xs uppercase tracking-widest font-medium text-neutral-700">
                 Printing
               </p>
             </div>
             <div className="flex flex-row justify-between items-start">
-              <p className="text-sm max-w-md">
+              <p className="text-sm max-w-md text-neutral-700">
                 Welcome to our Printing Production showcase. We deliver
                 high-caliber prints across large-format, digital, and offset
                 outputs — engineered for clarity, color accuracy, and durability
@@ -75,11 +71,11 @@ export default function Page() {
               >
                 ← All Projects
               </Link>
-              <p className="text-xs uppercase tracking-widest font-medium">
+              <p className="text-xs uppercase tracking-widest font-medium text-neutral-700">
                 Printing
               </p>
             </div>
-            <p className="text-sm">
+            <p className="text-sm text-neutral-700">
               Welcome to our Printing Production showcase. We deliver
               high-caliber prints across large-format, digital, and offset
               outputs — engineered for clarity, color accuracy, and durability.
@@ -103,7 +99,7 @@ export default function Page() {
       <section className="pb-16">
         <div className="relative w-full aspect-[16/9] overflow-hidden group">
           <Image
-            src="/car-album-image-01.png"
+            src="/printing-album-img.jpg"
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
             alt="Large format printing production"
@@ -116,13 +112,13 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="space-y-8">
-              <h2 className="text-2xl font-medium">
+              <h2 className="text-2xl font-medium text-neutral-800">
                 Concept &amp;
                 <br />
                 Production Showcase
               </h2>
             </div>
-            <p className="text-lg">
+            <p className="text-lg text-neutral-700">
               Our production process begins with meticulous color calibration
               and material selection. From business cards and brochures to
               billboards and vehicle wraps, every project undergoes rigorous
@@ -134,7 +130,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-02.png"
+                src="/printing-album-img-01.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Digital press output samples"
@@ -142,7 +138,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-03.png"
+                src="/printing-album-img-02.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Large format banner printing"
@@ -150,7 +146,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-04.png"
+                src="/printing-album-img-03.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Premium business card finishing"
@@ -158,7 +154,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-05.png"
+                src="/printing-album-img-04.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Packaging print samples"
@@ -166,7 +162,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-06.png"
+                src="/printing-album-img-05.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Poster and flyer production"
@@ -174,7 +170,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-07.png"
+                src="/printing-album-img-06.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Vehicle wrap installation"
@@ -182,7 +178,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-08.png"
+                src="/printing-album-img-07.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Sticker and label printing"
@@ -190,7 +186,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/car-album-image-09.png"
+                src="/printing-album-img-08.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Signage and display boards"
@@ -204,8 +200,10 @@ export default function Page() {
       <section className="pb-16 px-6 md:px-20 lg:px-32">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <h2 className="text-2xl font-medium">The Result</h2>
-            <p className="text-lg">
+            <h2 className="text-2xl font-medium text-neutral-800">
+              The Result
+            </h2>
+            <p className="text-lg text-neutral-700">
               The result is print production that doesn&apos;t merely reproduce
               designs — it elevates them. Our clients receive outputs that
               maintain brand consistency across nationwide campaigns, impress at
@@ -217,27 +215,20 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Image 10 */}
-      <section className="pb-16">
-        <div className="relative w-full aspect-[16/9] overflow-hidden group">
-          <Image
-            src="/car-album-image-10.png"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-            alt="Finished print campaign collage"
-          />
-        </div>
-      </section>
-
       {/* Next Project Section */}
       <section className="pb-16 px-6 md:px-20 lg:px-32">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-medium mb-8">Next Project</h2>
+          <h2 className="text-2xl font-medium mb-8 text-neutral-800">
+            Next Project
+          </h2>
           <Link href="/works/album/branding" className="block">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-4 gap-4">
-              <span className="text-4xl md:text-6xl font-medium">2</span>
-              <h3 className="text-4xl md:text-6xl font-medium">Branding</h3>
-              <span className="text-4xl md:text-6xl font-medium">2025</span>
+              <span className="text-4xl md:text-6xl font-medium text-black">
+                2
+              </span>
+              <h3 className="text-4xl md:text-6xl font-medium text-black">
+                Branding
+              </h3>
             </div>
             <div className="relative w-full aspect-[16/9] overflow-hidden group">
               <Image

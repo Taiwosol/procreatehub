@@ -89,21 +89,21 @@ export default function Selection() {
                   src={selection.smallImage}
                   alt={selection.smallImageLabel}
                   fill
-                  className="object-contain"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
           </div>
 
           {/* Right Large Image */}
-          <div className="w-full md:w-1/2 h-full bg-neutral-100">
+          <div className="w-full md:w-1/2 h-full bg-white">
             <div className="relative w-full h-full">
               <Image
                 src={selection.largeImage}
                 alt={selection.title}
                 fill
                 priority={selection.id === 1}
-                className="object-contain"
+                className="object-cover w-full h-full"
               />
             </div>
           </div>

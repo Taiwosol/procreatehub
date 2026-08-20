@@ -540,7 +540,7 @@ export default function HeroPremium() {
               ref={headingRef}
               className="text-[1.9rem] sm:text-[2.2rem] lg:text-[2.7rem] xl:text-[3.1rem] font-black text-gray-950 tracking-tight mb-8 lg:mb-10 leading-[1.02]"
             >
-              Premium Branding &amp; Production Solutions That Bring{" "}
+              Premium Print Production &amp; Branding Solutions That Bring{" "}
               <span className="text-red-600">Ideas</span> To Life
             </h1>
 

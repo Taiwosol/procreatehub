@@ -12,24 +12,20 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           {/* Desktop Top Row */}
           <div className="hidden md:flex flex-row justify-between items-start mb-12">
-            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
+            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium text-black">
               (03)
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
               Packaging
             </h1>
-            <span className="text-4xl md:text-6xl lg:text-[72px] font-medium">
-              2025
-            </span>
           </div>
 
           {/* Mobile Top Row */}
           <div className="flex md:hidden flex-row items-center gap-4 mb-8">
-            <span className="text-4xl font-medium">(03)</span>
+            <span className="text-4xl font-medium text-black">(03)</span>
             <h1 className="text-4xl font-medium leading-[1.1] text-black tracking-tight">
               Packaging
             </h1>
-            <span className="text-4xl font-medium">2025</span>
           </div>
 
           {/* Desktop Bottom Row */}
@@ -41,12 +37,12 @@ export default function Page() {
               >
                 All Projects
               </Link>
-              <p className="text-xs uppercase tracking-widest font-medium">
+              <p className="text-xs uppercase tracking-widest font-medium text-neutral-700">
                 Packaging
               </p>
             </div>
             <div className="flex flex-row justify-between items-start">
-              <p className="text-sm max-w-md">
+              <p className="text-sm max-w-md text-neutral-700">
                 Welcome to our Packaging showcase. We design and produce
                 innovative packaging solutions that merge structural engineering
                 with stunning graphics — helping products stand out on shelves
@@ -75,11 +71,11 @@ export default function Page() {
               >
                 ← All Projects
               </Link>
-              <p className="text-xs uppercase tracking-widest font-medium">
+              <p className="text-xs uppercase tracking-widest font-medium text-neutral-700">
                 Packaging
               </p>
             </div>
-            <p className="text-sm">
+            <p className="text-sm text-neutral-700">
               Welcome to our Packaging showcase. We design and produce
               innovative packaging solutions that merge structural engineering
               with stunning graphics for standout shelf presence.
@@ -103,7 +99,7 @@ export default function Page() {
       <section className="pb-16">
         <div className="relative w-full aspect-[16/9] overflow-hidden group">
           <Image
-            src="/nature-album-image-01.jpg"
+            src="/packaging-album-img.jpg"
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
             alt="Premium packaging line hero"
@@ -116,13 +112,13 @@ export default function Page() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="space-y-8">
-              <h2 className="text-2xl font-medium">
+              <h2 className="text-2xl font-medium text-neutral-800">
                 Concept &amp;
                 <br />
                 Packaging Showcase
               </h2>
             </div>
-            <p className="text-lg">
+            <p className="text-lg text-neutral-700">
               Our packaging process fuses consumer research, structural
               prototyping, and graphic design into cohesive systems that both
               protect and elevate products. From eco-friendly mailer boxes to
@@ -205,8 +201,10 @@ export default function Page() {
       <section className="pb-16 px-6 md:px-20 lg:px-32">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            <h2 className="text-2xl font-medium">The Result</h2>
-            <p className="text-lg">
+            <h2 className="text-2xl font-medium text-neutral-800">
+              The Result
+            </h2>
+            <p className="text-lg text-neutral-700">
               The result is packaging that works as hard as the products inside
               — driving purchase decisions at shelf level and earning social
               shares through unforgettable unboxing moments. Our clients see
@@ -234,14 +232,17 @@ export default function Page() {
       {/* Next Project Section */}
       <section className="pb-16 px-6 md:px-20 lg:px-32">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-medium mb-8">Next Project</h2>
+          <h2 className="text-2xl font-medium mb-8 text-neutral-800">
+            Next Project
+          </h2>
           <Link href="/works/album/gift-sales-procurement" className="block">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-4 gap-4">
-              <span className="text-4xl md:text-6xl font-medium">4</span>
-              <h3 className="text-4xl md:text-6xl font-medium">
+              <span className="text-4xl md:text-6xl font-medium text-black">
+                4
+              </span>
+              <h3 className="text-4xl md:text-6xl font-medium text-black">
                 Gift Sales &amp; Procurement
               </h3>
-              <span className="text-4xl md:text-6xl font-medium">2025</span>
             </div>
             <div className="relative w-full aspect-[16/9] overflow-hidden group">
               <Image
