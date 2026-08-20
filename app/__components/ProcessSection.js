@@ -5,28 +5,28 @@ import process03 from "../../public/process-step-image-03.png";
 
 const processes = [
   {
-    title: "Visual Storytelling & Direction",
+    title: "Brand Strategy & Creative Design",
     description:
-      "At BraceLend, we don't just capture moments — we design them. Our creative team leads each project with a clear visual language, ensuring that every frame reflects your story, tone, and essence with artistic precision.",
+      "Every great print starts with a clear idea. We begin by understanding your brand, audience, and objectives, then translate that insight into bold visual concepts — from logo systems and brand identities to packaging layouts and signage designs that command attention.",
     image: process01,
   },
   {
-    title: "Studio & On-Location Production",
+    title: "Production & Precision Manufacturing",
     description:
-      "From concept to execution, we handle the entire production process. Whether it's an intimate studio session or a large-scale outdoor shoot, our approach balances technical mastery with an instinct for light, space, and mood.",
+      "This is where ideas take physical shape. Our in-house team runs state-of-the-art presses, die-cutters, and fabrication lines to produce premium prints, custom packages, corporate gifts, branded merchandise, and large-format signage with sharp color and flawless finish.",
     image: process02,
   },
   {
-    title: "Post-Production & Finishing",
+    title: "Quality Assurance & Nationwide Delivery",
     description:
-      "The magic continues in post. We refine every detail — color, texture, and tone — to produce cohesive visuals that feel both cinematic and timeless. Our finishing process ensures every image meets the highest creative standard.",
+      "Before anything leaves our studio, every piece passes through a rigorous quality check — color accuracy, material integrity, structural finish. We then coordinate secure packaging and reliable nationwide logistics so your brand assets arrive pristine and on schedule.",
     image: process03,
   },
 ];
 
 export default function ProcessSection() {
   return (
-    <section className="bg-white text-black py-16 px-10">
+    <section className="bg-white text-black pt-16 pb-4 px-10">
       <div className="max-w-7xl mx-auto">
         {/* <h2 className="text-4xl md:text-5xl lg:text-[64px] font-normal mb-16 tracking-tight">
           Our process

@@ -14,7 +14,7 @@ export default function NavBar() {
     { name: "Explore", href: "#", isDropdown: true },
     { name: "About us", href: "/about" },
     { name: "Works", href: "/works" },
-    { name: "Packages", href: "/pricing" },
+    { name: "Products", href: "/pricing" },
     { name: "Contact us", href: "/contact" },
   ];
 
@@ -22,6 +22,16 @@ export default function NavBar() {
     { name: "Testimonials", href: "/testimonials" },
     { name: "Services", href: "/services" },
   ];
+
+  const isLinkActive = (link) => {
+    if (link.isDropdown) {
+      return exploreLinks.some((s) => pathname?.startsWith(s.href));
+    }
+    if (link.href === "/works") {
+      return pathname?.startsWith("/works");
+    }
+    return pathname === link.href;
+  };
 
   return (
     <nav className="bg-white w-full z-50 shadow-sm border-b border-gray-100">
@@ -97,14 +107,14 @@ export default function NavBar() {
                   <Link href={link.href} className="flex items-center group">
                     <span
                       className={`mr-2 h-1 w-4 bg-black transition-all duration-300 ${
-                        pathname === link.href
+                        isLinkActive(link)
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
                       } transform origin-left`}
                     ></span>
                     <span
                       className={`text-black font-bold text-lg transform transition-transform duration-300 ${
-                        pathname === link.href
+                        isLinkActive(link)
                           ? "translate-x-2"
                           : "group-hover:translate-x-2"
                       }`}
@@ -218,10 +228,10 @@ export default function NavBar() {
                     >
                       <span className="flex items-center">
                         <span
-                          className={`mr-2 h-1 w-4 bg-black transition-all duration-300 ${isExploreOpen ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
+                          className={`mr-2 h-1 w-4 bg-black transition-all duration-300 ${isExploreOpen || isLinkActive(link) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}`}
                         ></span>
                         <span
-                          className={`transition-transform duration-300 ${isExploreOpen ? "translate-x-2" : "group-hover:translate-x-2"}`}
+                          className={`transition-transform duration-300 ${isExploreOpen || isLinkActive(link) ? "translate-x-2" : "group-hover:translate-x-2"}`}
                         >
                           {link.name}
                         </span>
@@ -269,14 +279,14 @@ export default function NavBar() {
                   >
                     <span
                       className={`mr-2 h-1 w-4 bg-black transition-all duration-300 ${
-                        pathname === link.href
+                        isLinkActive(link)
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
                       }`}
                     ></span>
                     <span
                       className={`transform transition-transform duration-300 ${
-                        pathname === link.href
+                        isLinkActive(link)
                           ? "translate-x-2"
                           : "group-hover:translate-x-2"
                       }`}

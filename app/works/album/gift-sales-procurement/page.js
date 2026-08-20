@@ -132,7 +132,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/gift-album-img-01.jpg"
+                src="/gift-album-img-01.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Custom branded gift sets"
@@ -140,7 +140,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/gift-album-img-02.jpg"
+                src="/gift-album-img-02.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Corporate holiday gift boxes"
@@ -164,7 +164,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/gift-album-img-05.png"
+                src="/gift-album-img-05.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Custom branded merchandise"
@@ -180,7 +180,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/gift-album-img-07.png"
+                src="/gift-album-img-07.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Welcome onboarding packages"
