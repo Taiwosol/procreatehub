@@ -4,7 +4,7 @@ import nimah from "../../public/Nimah.jpeg";
 const testimonials = [
   {
     quote:
-      "Procr8 Hub is efficient in top notch quality branding. The process was smooth from start to finish, and every delivery came in with a strong attention to detail. If you're looking for a team that can translate ideas into a clean, premium brand presence, they're the right choice.",
+      "ProCr8Hub is efficient in top notch quality branding. The process was smooth from start to finish, and every delivery came in with a strong attention to detail. If you're looking for a team that can translate ideas into a clean, premium brand presence, they're the right choice.",
     name: "Tina Obiora",
     role: "Founder, CEO of Sprout Media",
     image: nimah,
