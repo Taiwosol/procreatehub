@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import CTASection from "../__components/CTASection";
 import FooterDark from "../__components/FooterDark";
-import heroImg from "../../public/sevices-hero-image.png";
-import servicesImg06 from "../../public/services-image-06.png";
-import servicesImg07 from "../../public/services-image-07.jpg";
-import servicesImg01 from "../../public/services-image-01.png";
-import servicesImg02 from "../../public/services-image-02.png";
-import servicesImg03 from "../../public/services-image-03.png";
-import servicesImg04 from "../../public/services-image-04.png";
-import servicesImg05 from "../../public/services-image-05.jpg";
+import heroImg from "../../public/hero-print.jpg";
+import servicesImg01 from "../../public/branding-album-img-01.jpg";
+import servicesImg02 from "../../public/printing-album-img-02.jpg";
+import servicesImg03 from "../../public/packaging-album-img-03.png";
+import servicesImg04 from "../../public/gift-album-img-02.png";
+import servicesImg05 from "../../public/space-img.jpg";
+import servicesImg06 from "../../public/print-img-new.jpg";
+import servicesImg07 from "../../public/van-img.jpg";
 
 export default function Page() {
   return (
@@ -22,8 +22,8 @@ export default function Page() {
           {/* Hero Text */}
           <div className="flex flex-col md:flex-col justify-between items-start  mb-12 gap-8">
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-4xl tracking-tight">
-              From creative concept to final retouch, we help you bring your
-              ideas to life.
+              Create. Brand. Impact. — Premium print and branding solutions
+              built for businesses that mean business.
             </h1>
             <div className="flex justify-between items-center gap-15">
               <Link
@@ -53,41 +53,39 @@ export default function Page() {
               fill
               priority
               className="object-cover"
-              alt="Services Hero"
+              alt="ProCr8Hub Print Production"
               placeholder="blur"
             />
           </div>
         </div>
       </section>
 
-      {/* Creative Direction Section */}
+      {/* Intro Section */}
       <section className="pb-16 px-6 md:px-20 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
-                Creative Direction
+                End-to-End Branding & Print
               </h2>
             </div>
             <div className="space-y-12">
               <p className="text-2xl md:text-3xl lg:text-4xl font-normal text-black leading-relaxed">
-                We&apos;re not your typical design agency. We&apos;re a
-                four-headed force of creatives, strategists, and makers obsessed
-                with helping ambitious brands go from meh to magnetic.
+                ProCr8Hub is a multi-state print and branding studio powering
+                businesses with impeccable design, precision manufacturing, and
+                nationwide delivery.
               </p>
-              <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                From concept to capture, we produce imagery that tells authentic
-                stories. Whether it&apos;s a brand campaign, editorial shoot,
-                product showcase, or personal portrait series, our photographers
-                balance artistry with precision to deliver work that feels
-                cinematic and emotionally resonant.
+              <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                From brand strategy and creative design through to production
+                and logistics, we own every stage. Our in-house teams for
+                branding, print, packaging, signage, and corporate gifts work
+                as one to deliver quality that moves the needle for your
+                business.
               </p>
-              <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                The story doesn&apos;t end with the shutter click. Our
-                post-production team refines every detail — tone, texture, and
-                color — to craft polished, timeless visuals. From advanced
-                retouching to creative color grading, we elevate each image to
-                match the project&apos;s unique aesthetic and emotional tone.
+              <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                We serve small startups, mid-sized enterprises, and large
+                corporate and government institutions across the country —
+                delivering consistent quality, on time, every time.
               </p>
               <Link
                 href="/contact"
@@ -107,16 +105,16 @@ export default function Page() {
             What We Do
           </h2>
           <div className="space-y-16">
-            {/* Visual Strategy */}
+            {/* Branding & Identity */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div className="order-2 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
-                  Visual Strategy
+                  Branding & Identity
                 </h3>
-                <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                  Pearl Studio is a Berlin-based design agency built by four
-                  creatives with a shared passion for bold ideas and beautiful
-                  execution.
+                <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                  We build brands that speak — bold, clear, and built for
+                  longevity. From naming and logo design to full visual
+                  identity systems, we make sure your brand leaves a mark.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -125,23 +123,23 @@ export default function Page() {
                     src={servicesImg01}
                     fill
                     className="object-cover"
-                    alt="Visual Strategy"
+                    alt="Branding and Identity Design"
                     placeholder="blur"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Photography */}
+            {/* Printing Production */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div className="order-2 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
-                  Photography
+                  Printing Production
                 </h3>
-                <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                  We build brands that speak — bold, clear, and built for
-                  longevity. From naming to visual identity, we make sure your
-                  brand leaves a mark.
+                <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                  Large format, offset, digital, UV, and specialty printing —
+                  all produced in-house with premium materials. Business cards,
+                  banners, flyers, books, and everything in between.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -150,23 +148,23 @@ export default function Page() {
                     src={servicesImg02}
                     fill
                     className="object-cover"
-                    alt="Photography"
+                    alt="Printing Production Services"
                     placeholder="blur"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Creative Direction */}
+            {/* Packaging Design */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div className="order-2 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
-                  Post-Production
+                  Packaging Design
                 </h3>
-                <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                  Great ideas start with strong thinking. We use research,
-                  positioning, and storytelling to shape strategies that move
-                  the needle.
+                <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                  Shelf-ready packaging that protects your product and sells
+                  it. Structural design, premium materials, custom finishes,
+                  and full production under one roof.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -175,24 +173,23 @@ export default function Page() {
                     src={servicesImg03}
                     fill
                     className="object-cover"
-                    alt="Creative Direction"
+                    alt="Packaging Design and Production"
                     placeholder="blur"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Visual Storytelling */}
-
+            {/* Corporate Gifts & Signage */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div className="order-2 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
-                  Visual Storytelling
+                  Corporate Gifts & Signage
                 </h3>
-                <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-                  Pearl Studio is a Berlin-based design agency built by four
-                  creatives with a shared passion for bold ideas and beautiful
-                  execution.
+                <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+                  Custom merchandise, branded giveaways, indoor and outdoor
+                  signage, vehicle branding, and wayfinding. Procurement and
+                  fulfillment handled nationwide.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -201,7 +198,7 @@ export default function Page() {
                     src={servicesImg04}
                     fill
                     className="object-cover"
-                    alt="Post-Production"
+                    alt="Corporate Gifts and Signage"
                     placeholder="blur"
                   />
                 </div>
@@ -219,32 +216,31 @@ export default function Page() {
             src={servicesImg05}
             fill
             className="object-cover"
-            alt="Collaboration"
+            alt="ProCr8Hub Brand Showcase"
             placeholder="blur"
           />
         </div>
         {/* Text Beneath */}
         <div className=" pt-16">
           <div className="max-w-7xl mx-auto space-y-12">
-            <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-              At BraceLend, collaboration is at the heart of everything we do.
+            <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+              At ProCr8Hub, collaboration is at the heart of everything we do.
               Each project begins with understanding — of your brand, your
-              story, and your audience. From there, we design a seamless
-              experience that blends artistry and communication, ensuring your
-              vision comes to life in its purest form.
+              market, and your goals. From there, we design a seamless
+              experience that blends strategy, creativity, and precision
+              manufacturing, ensuring your vision comes to life exactly as
+              imagined.
             </p>
-            <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-              We&apos;re proud to have worked with diverse clients — from local
-              startups to international brands — helping each one find visual
-              distinction through photography.
+            <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+              We&apos;re proud to have served diverse clients — from local
+              startups to nationwide corporate brands — helping each one build
+              distinction through world-class print and branding.
             </p>
-            <p className="text-xl md:text-2xl font-normal text-gray-600 leading-relaxed">
-              We love collaborating with passionate teams, and over the past few
-              years, we&apos;ve had the pleasure of working with various design
-              teams both in-person and remotely. We&apos;ve also teamed up with
-              fantastic design agencies and freelancers to create stunning and
-              impactful digital experiences for clients, including a photography
-              studio known for its breathtaking work.
+            <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+              Our three-stage process — Brand Strategy & Creative Design,
+              Production & Precision Manufacturing, and Quality Assurance &
+              Nationwide Delivery — ensures every job ships on spec, on time,
+              and on budget. No surprises. No shortcuts. Just results.
             </p>
           </div>
         </div>
@@ -257,7 +253,7 @@ export default function Page() {
             src={servicesImg06}
             fill
             className="object-cover"
-            alt="Services Image 06"
+            alt="Print Production Facility"
             placeholder="blur"
           />
         </div>
@@ -266,7 +262,7 @@ export default function Page() {
             src={servicesImg07}
             fill
             className="object-cover"
-            alt="Services Image 07"
+            alt="Nationwide Delivery Logistics"
             placeholder="blur"
           />
         </div>
