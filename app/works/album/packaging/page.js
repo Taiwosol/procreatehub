@@ -131,7 +131,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-02.jpg"
+                src="/packaging-album-img-01.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Box packaging structural designs"
@@ -139,7 +139,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-03.jpg"
+                src="/packaging-album-img-02.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Luxury rigid box packaging"
@@ -147,7 +147,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-04.jpg"
+                src="/packaging-album-img-03.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Eco-friendly mailer packaging"
@@ -155,7 +155,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-05.jpg"
+                src="/packaging-album-img-04.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Flexible pouch packaging"
@@ -163,7 +163,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-06.jpg"
+                src="/packaging-album-img-05.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Product label design"
@@ -171,7 +171,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-07.jpg"
+                src="/packaging-album-img-06.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Sleeve and wrap packaging"
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-08.jpg"
+                src="/packaging-album-img-07.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Cosmetic packaging line"
@@ -187,7 +187,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/nature-album-image-09.jpg"
+                src="/packaging-album-img-08.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Retail display packaging"
@@ -214,18 +214,6 @@ export default function Page() {
               standards.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Image 10 */}
-      <section className="pb-16">
-        <div className="relative w-full aspect-[16/9] overflow-hidden group">
-          <Image
-            src="/nature-album-image-10.jpg"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-            alt="Complete packaging collection"
-          />
         </div>
       </section>
 

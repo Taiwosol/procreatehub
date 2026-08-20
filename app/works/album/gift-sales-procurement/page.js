@@ -132,7 +132,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-02.png"
+                src="/gift-album-img-01.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Custom branded gift sets"
@@ -140,7 +140,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-03.png"
+                src="/gift-album-img-02.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Corporate holiday gift boxes"
@@ -148,7 +148,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-04.jpg"
+                src="/gift-album-img-03.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Premium executive gifts"
@@ -156,7 +156,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-05.jpg"
+                src="/gift-album-img-04.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Employee appreciation kits"
@@ -164,7 +164,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-06.jpg"
+                src="/gift-album-img-05.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Custom branded merchandise"
@@ -172,7 +172,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-07.jpg"
+                src="/gift-album-img-06.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Event and conference swag"
@@ -180,7 +180,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-08.jpg"
+                src="/gift-album-img-07.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Welcome onboarding packages"
@@ -188,7 +188,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/space-travel-image-09.jpg"
+                src="/gift-album-img-08.png"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Award and recognition trophies"
@@ -215,18 +215,6 @@ export default function Page() {
               handle every detail.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Image 10 */}
-      <section className="pb-16">
-        <div className="relative w-full aspect-[16/9] overflow-hidden group">
-          <Image
-            src="/space-travel-image-10.jpg"
-            fill
-            className="object-cover group-hover:scale-105 transition-transform duration-500"
-            alt="Full gift and procurement campaign"
-          />
         </div>
       </section>
 
