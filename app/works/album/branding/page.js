@@ -171,7 +171,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/branding-album-img-06.png"
+                src="/branding-album-img-06.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Social media brand kit"
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/branding-album-img-07.png"
+                src="/branding-album-img-07.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Brand book and style guide"
@@ -187,7 +187,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/branding-album-img-08.png"
+                src="/branding-album-img-08.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Signage and environmental branding"

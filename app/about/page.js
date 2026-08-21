@@ -10,7 +10,7 @@ import TestimonialsSection from "../__components/TestimonialsSection";
 import FAQSection from "../__components/FAQSection";
 // import CTASection from "../__components/CTASection";
 import FooterDark from "../__components/FooterDark";
-import heroImg from "../../public/about-hero-image.png";
+import heroImg from "../../public/about-hero-img.jpg";
 import imageBreaker from "../../public/Image-breaker.png";
 
 export default function Page() {

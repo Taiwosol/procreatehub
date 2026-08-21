@@ -131,7 +131,7 @@ export default function Page() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/packaging-album-img-01.png"
+                src="/packaging-album-img-01.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Box packaging structural designs"
@@ -139,7 +139,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/packaging-album-img-02.png"
+                src="/packaging-album-img-02.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Luxury rigid box packaging"
@@ -171,7 +171,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/packaging-album-img-06.png"
+                src="/packaging-album-img-06.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Sleeve and wrap packaging"
@@ -179,7 +179,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/packaging-album-img-07.png"
+                src="/packaging-album-img-07.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Cosmetic packaging line"
@@ -187,7 +187,7 @@ export default function Page() {
             </div>
             <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm group">
               <Image
-                src="/packaging-album-img-08.png"
+                src="/packaging-album-img-08.jpg"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Retail display packaging"
