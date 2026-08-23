@@ -34,12 +34,14 @@ export default function Page() {
               </Link>
               <button
                 onClick={() => {
-                  window.scrollTo({
-                    top: window.innerHeight,
-                    behavior: "smooth",
-                  });
+                  const nextSection = document.querySelector(
+                    "section:nth-of-type(2)",
+                  );
+                  if (nextSection) {
+                    nextSection.scrollIntoView({ behavior: "smooth" });
+                  }
                 }}
-                className="text-black text-xs uppercase tracking-widest font-medium pb-1 hover:opacity-60 transition-opacity flex items-center gap-2"
+                className="cursor-pointer text-black text-xs uppercase tracking-widest font-medium pb-1 hover:opacity-60 transition-opacity flex items-center gap-2"
               >
                 Scroll Down <span>↓</span>
               </button>
@@ -47,7 +49,7 @@ export default function Page() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative w-full h-screen overflow-hidden rounded-sm">
+          <div className="relative w-full h-[50vh] md:h-screen overflow-hidden rounded-sm">
             <Image
               src={heroImg}
               fill
@@ -106,7 +108,7 @@ export default function Page() {
           <div className="space-y-16">
             {/* Branding & Identity */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
                   Branding & Identity
                 </h3>
@@ -116,7 +118,7 @@ export default function Page() {
                   systems, we make sure your brand leaves a mark.
                 </p>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2">
                 <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg01}
@@ -131,7 +133,7 @@ export default function Page() {
 
             {/* Printing Production */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
                   Printing Production
                 </h3>
@@ -141,7 +143,7 @@ export default function Page() {
                   banners, flyers, books, and everything in between.
                 </p>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2">
                 <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg02}
@@ -156,7 +158,7 @@ export default function Page() {
 
             {/* Packaging Design */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
                   Packaging Design
                 </h3>
@@ -166,7 +168,7 @@ export default function Page() {
                   full production under one roof.
                 </p>
               </div>
-              <div className="order-1 md:order-2">
+              <div className="order-2 md:order-2">
                 <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg03}
@@ -181,7 +183,7 @@ export default function Page() {
 
             {/* Corporate Gifts & Signage */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-              <div className="order-2 md:order-1">
+              <div className="order-1 md:order-1">
                 <h3 className="text-3xl md:text-4xl lg:text-5xl font-medium text-black mb-6 tracking-tight">
                   Corporate Gifts & Signage
                 </h3>
@@ -191,8 +193,8 @@ export default function Page() {
                   fulfillment handled nationwide.
                 </p>
               </div>
-              <div className="order-1 md:order-2">
-                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
+              <div className="order-2 md:order-2">
+                <div className="relative w-full aspect-square md:aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg04}
                     fill
@@ -247,7 +249,7 @@ export default function Page() {
 
       {/* Full Width Images Section */}
       <section className="space-y-0 pb-16 px-10">
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
           <Image
             src={servicesImg06}
             fill
@@ -256,7 +258,7 @@ export default function Page() {
             placeholder="blur"
           />
         </div>
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
           <Image
             src={servicesImg07}
             fill
