@@ -200,19 +200,7 @@ export default function Page() {
                 </p>
               </div>
               <div className="order-2 md:order-2">
-                {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
-                <div className="md:hidden">
-                  <Image
-                    src={servicesImg04}
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover rounded-sm"
-                    alt="Corporate Gifts and Signage"
-                    placeholder="blur"
-                  />
-                </div>
-                {/* Desktop: fill with aspect */}
-                <div className="hidden md:block relative w-full aspect-[4/3] overflow-hidden rounded-sm">
+                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg04}
                     fill
@@ -229,6 +217,19 @@ export default function Page() {
 
       {/* Full Width Image + Text Section */}
       <section className="pb-16 px-6 md:px-20 lg:px-10">
+        {/* Text */}
+        <div className="pb-16">
+          <div className="max-w-7xl mx-auto space-y-12">
+            <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
+              At ProCr8Hub, collaboration is at the heart of everything we do.
+              Each project begins with understanding — of your brand, your
+              market, and your goals. From there, we design a seamless
+              experience that blends strategy, creativity, and precision
+              manufacturing, ensuring your vision comes to life exactly as
+              imagined.
+            </p>
+          </div>
+        </div>
         {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
         <div className="md:hidden">
           <Image
@@ -250,17 +251,9 @@ export default function Page() {
             placeholder="blur"
           />
         </div>
-        {/* Text Beneath */}
-        <div className=" pt-16">
+        {/* Remaining Text */}
+        <div className="pt-16">
           <div className="max-w-7xl mx-auto space-y-12">
-            <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
-              At ProCr8Hub, collaboration is at the heart of everything we do.
-              Each project begins with understanding — of your brand, your
-              market, and your goals. From there, we design a seamless
-              experience that blends strategy, creativity, and precision
-              manufacturing, ensuring your vision comes to life exactly as
-              imagined.
-            </p>
             <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
               We&apos;re proud to have served diverse clients — from local
               startups to nationwide corporate brands — helping each one build
