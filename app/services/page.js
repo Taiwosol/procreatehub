@@ -8,7 +8,7 @@ import heroImg from "../../public/hero-print.jpg";
 import servicesImg01 from "../../public/branding-album-img-01.jpg";
 import servicesImg02 from "../../public/printing-album-img-02.jpg";
 import servicesImg03 from "../../public/packaging-album-img-03.png";
-import servicesImg04 from "../../public/gift-album-img-02.png";
+import servicesImg04 from "../../public/gift-album-img-02.jpg";
 import servicesImg05 from "../../public/space-img.jpg";
 import servicesImg06 from "../../public/print-img-new.jpg";
 import servicesImg07 from "../../public/van-img.jpg";
@@ -78,9 +78,8 @@ export default function Page() {
               <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
                 From brand strategy and creative design through to production
                 and logistics, we own every stage. Our in-house teams for
-                branding, print, packaging, signage, and corporate gifts work
-                as one to deliver quality that moves the needle for your
-                business.
+                branding, print, packaging, signage, and corporate gifts work as
+                one to deliver quality that moves the needle for your business.
               </p>
               <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
                 We serve small startups, mid-sized enterprises, and large
@@ -113,8 +112,8 @@ export default function Page() {
                 </h3>
                 <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
                   We build brands that speak — bold, clear, and built for
-                  longevity. From naming and logo design to full visual
-                  identity systems, we make sure your brand leaves a mark.
+                  longevity. From naming and logo design to full visual identity
+                  systems, we make sure your brand leaves a mark.
                 </p>
               </div>
               <div className="order-1 md:order-2">
@@ -162,9 +161,9 @@ export default function Page() {
                   Packaging Design
                 </h3>
                 <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
-                  Shelf-ready packaging that protects your product and sells
-                  it. Structural design, premium materials, custom finishes,
-                  and full production under one roof.
+                  Shelf-ready packaging that protects your product and sells it.
+                  Structural design, premium materials, custom finishes, and
+                  full production under one roof.
                 </p>
               </div>
               <div className="order-1 md:order-2">
