@@ -34,11 +34,17 @@ export default function Page() {
               </Link>
               <button
                 onClick={() => {
-                  const nextSection = document.querySelector(
-                    "section:nth-of-type(2)",
-                  );
+                  const nextSection = document.getElementById("intro-section");
                   if (nextSection) {
-                    nextSection.scrollIntoView({ behavior: "smooth" });
+                    nextSection.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  } else {
+                    window.scrollTo({
+                      top: document.body.scrollHeight * 0.35,
+                      behavior: "smooth",
+                    });
                   }
                 }}
                 className="cursor-pointer text-black text-xs uppercase tracking-widest font-medium pb-1 hover:opacity-60 transition-opacity flex items-center gap-2"
@@ -63,7 +69,7 @@ export default function Page() {
       </section>
 
       {/* Intro Section */}
-      <section className="pb-16 px-6 md:px-20 lg:px-10">
+      <section id="intro-section" className="pb-16 px-6 md:px-20 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
@@ -223,8 +229,19 @@ export default function Page() {
 
       {/* Full Width Image + Text Section */}
       <section className="pb-16 px-6 md:px-20 lg:px-10">
-        {/* Full Width Image */}
-        <div className="relative w-full h-screen overflow-hidden">
+        {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
+        <div className="md:hidden">
+          <Image
+            src={servicesImg05}
+            width={800}
+            height={600}
+            className="w-full h-auto object-cover rounded-sm"
+            alt="ProCr8Hub Brand Showcase"
+            placeholder="blur"
+          />
+        </div>
+        {/* Desktop: fill with h-screen */}
+        <div className="hidden md:block relative w-full h-screen overflow-hidden">
           <Image
             src={servicesImg05}
             fill
