@@ -194,7 +194,19 @@ export default function Page() {
                 </p>
               </div>
               <div className="order-2 md:order-2">
-                <div className="relative w-full aspect-square md:aspect-[4/3] overflow-hidden rounded-sm">
+                {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
+                <div className="md:hidden">
+                  <Image
+                    src={servicesImg04}
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover rounded-sm"
+                    alt="Corporate Gifts and Signage"
+                    placeholder="blur"
+                  />
+                </div>
+                {/* Desktop: fill with aspect */}
+                <div className="hidden md:block relative w-full aspect-[4/3] overflow-hidden rounded-sm">
                   <Image
                     src={servicesImg04}
                     fill
@@ -249,7 +261,19 @@ export default function Page() {
 
       {/* Full Width Images Section */}
       <section className="space-y-0 pb-16 px-10">
-        <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
+        {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
+        <div className="md:hidden">
+          <Image
+            src={servicesImg06}
+            width={800}
+            height={600}
+            className="w-full h-auto object-cover rounded-sm"
+            alt="Print Production Facility"
+            placeholder="blur"
+          />
+        </div>
+        {/* Desktop: fill with h-screen */}
+        <div className="hidden md:block relative w-full h-screen overflow-hidden">
           <Image
             src={servicesImg06}
             fill
@@ -258,7 +282,19 @@ export default function Page() {
             placeholder="blur"
           />
         </div>
-        <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
+        {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
+        <div className="md:hidden">
+          <Image
+            src={servicesImg07}
+            width={800}
+            height={600}
+            className="w-full h-auto object-cover rounded-sm"
+            alt="Nationwide Delivery Logistics"
+            placeholder="blur"
+          />
+        </div>
+        {/* Desktop: fill with h-screen */}
+        <div className="hidden md:block relative w-full h-screen overflow-hidden">
           <Image
             src={servicesImg07}
             fill
