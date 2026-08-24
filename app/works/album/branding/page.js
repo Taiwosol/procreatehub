@@ -87,7 +87,7 @@ export default function Page() {
                   behavior: "smooth",
                 });
               }}
-              className="text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity flex items-center gap-2 self-start"
+              className="cursor-pointer text-black text-xs uppercase tracking-widest font-medium border-b border-black pb-1 hover:opacity-60 transition-opacity flex items-center gap-2 self-start"
             >
               Scroll Down <span>↓</span>
             </button>

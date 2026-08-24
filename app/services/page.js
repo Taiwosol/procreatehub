@@ -34,18 +34,10 @@ export default function Page() {
               </Link>
               <button
                 onClick={() => {
-                  const nextSection = document.getElementById("intro-section");
-                  if (nextSection) {
-                    nextSection.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  } else {
-                    window.scrollTo({
-                      top: document.body.scrollHeight * 0.35,
-                      behavior: "smooth",
-                    });
-                  }
+                  window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: "smooth",
+                  });
                 }}
                 className="cursor-pointer text-black text-xs uppercase tracking-widest font-medium pb-1 hover:opacity-60 transition-opacity flex items-center gap-2"
               >
