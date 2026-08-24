@@ -3,15 +3,12 @@
 import Image from "next/image";
 import AboutSection from "../__components/AboutSection";
 import ProcessSection from "../__components/ProcessSection";
-// import AwardSection from "../__components/AwardSection";
-import ImageSection from "../__components/ImageSection";
+
 import TeamSection from "../__components/TeamSection";
 import TestimonialsSection from "../__components/TestimonialsSection";
 import FAQSection from "../__components/FAQSection";
-// import CTASection from "../__components/CTASection";
 import FooterDark from "../__components/FooterDark";
 import heroImg from "../../public/about-hero-img.jpg";
-import imageBreaker from "../../public/Image-breaker.png";
 
 export default function Page() {
   return (
