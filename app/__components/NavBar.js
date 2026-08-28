@@ -14,7 +14,6 @@ export default function NavBar() {
     { name: "Explore", href: "#", isDropdown: true },
     { name: "About us", href: "/about" },
     { name: "Works", href: "/works" },
-    { name: "Products", href: "/pricing" },
     { name: "Contact us", href: "/contact" },
   ];
 

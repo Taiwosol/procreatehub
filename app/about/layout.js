@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About | Braceland",
+  title: "About | ProCr8Hub",
 };
 
 export default function AboutLayout({ children }) {

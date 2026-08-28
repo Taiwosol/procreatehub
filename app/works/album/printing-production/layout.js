@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Car Album",
+  title: "Printing Production | ProCr8Hub",
 };
 
-export default function CarAlbumLayout({ children }) {
+export default function PrintingProductionLayout({ children }) {
   return children;
 }

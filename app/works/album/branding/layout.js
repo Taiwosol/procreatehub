@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Wedding Album",
+  title: "Branding | ProCr8Hub",
 };
 
-export default function WeddingAlbumLayout({ children }) {
+export default function BrandingLayout({ children }) {
   return children;
 }

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Space Travel",
+  title: "Corporate Gifts | ProCr8Hub",
 };
 
-export default function SpaceTravelLayout({ children }) {
+export default function CorporateGiftsLayout({ children }) {
   return children;
 }

@@ -17,7 +17,7 @@ export default function Navigation({ textColor = "text-white" }) {
             href="/"
             className={`font-black italic text-xl tracking-tighter ${textColor}`}
           >
-            BRACELAND
+            PROCR8HUB
           </Link>
         </li>
         <div className="flex gap-20">
@@ -70,7 +70,7 @@ export default function Navigation({ textColor = "text-white" }) {
               isOpen ? "text-black" : textColor
             }`}
           >
-            BRACELAND
+            PROCR8HUB
           </Link>
           <button
             onClick={() => setIsOpen(!isOpen)}

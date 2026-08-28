@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Nature Album",
+  title: "Packaging | ProCr8Hub",
 };
 
-export default function NatureAlbumLayout({ children }) {
+export default function PackagingLayout({ children }) {
   return children;
 }
