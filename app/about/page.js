@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
+      <section className="relative pt-32 pb-16 px-6 md:px-6 lg:px-6 xl:px-5 2xl:px-4">
         <div className="max-w-7xl mx-auto">
           {/* Hero Text */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">

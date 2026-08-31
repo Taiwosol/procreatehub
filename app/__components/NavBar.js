@@ -12,9 +12,9 @@ export default function NavBar() {
 
   const navLinks = [
     { name: "Explore", href: "#", isDropdown: true },
-    { name: "About us", href: "/about" },
+    { name: "About", href: "/about" },
     { name: "Works", href: "/works" },
-    { name: "Contact us", href: "/contact" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const exploreLinks = [
@@ -34,8 +34,8 @@ export default function NavBar() {
 
   return (
     <nav className="bg-white w-full z-50 shadow-sm border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-4 lg:px-6 xl:px-5 2xl:px-4">
+        <div className="flex items-center justify-between h-14 md:h-14 lg:h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="cursor-pointer block">
               <Image
@@ -44,13 +44,13 @@ export default function NavBar() {
                 width={180}
                 height={40}
                 loading="lazy"
-                className="h-10 w-auto"
+                className="h-7 md:h-8 lg:h-10 w-auto"
               />
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-4 md:space-x-5 lg:space-x-8 xl:space-x-10">
             {navLinks.map((link, idx) => (
               <div key={idx} className="relative group">
                 {link.isDropdown ? (
@@ -60,7 +60,7 @@ export default function NavBar() {
                     onMouseLeave={() => setIsExploreOpen(false)}
                   >
                     <span
-                      className={`flex items-center text-black font-bold text-lg`}
+                      className={`flex items-center text-black font-bold text-base md:text-base lg:text-lg`}
                     >
                       <span
                         className={`mr-2 h-1 w-4 bg-black transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300`}
@@ -112,7 +112,7 @@ export default function NavBar() {
                       } transform origin-left`}
                     ></span>
                     <span
-                      className={`text-black font-bold text-lg transform transition-transform duration-300 ${
+                      className={`text-black font-bold text-base md:text-base lg:text-lg transform transition-transform duration-300 ${
                         isLinkActive(link)
                           ? "translate-x-2"
                           : "group-hover:translate-x-2"
@@ -125,14 +125,14 @@ export default function NavBar() {
               </div>
             ))}
 
-            <div className="h-6 w-px bg-gray-300 mx-2" />
+            <div className="h-6 w-px bg-gray-300 mx-1 md:mx-1 lg:mx-2" />
 
             <div
               className="relative group"
               onMouseEnter={() => setIsContactOpen(true)}
               onMouseLeave={() => setIsContactOpen(false)}
             >
-              <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md font-bold transition-colors duration-300 flex items-center cursor-pointer">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-3 md:px-3 lg:px-6 py-1.5 md:py-1.5 lg:py-2 rounded-md font-bold text-sm md:text-sm lg:text-base transition-colors duration-300 flex items-center cursor-pointer">
                 Let&apos;s talk
                 <svg
                   className="ml-1 w-4 h-4"
@@ -154,7 +154,7 @@ export default function NavBar() {
                 >
                   <a
                     href="tel:+2348093206395"
-                    className="flex items-center py-2 text-black font-bold text-lg cursor-pointer rounded px-2 transition-all duration-200 group/sub"
+                    className="flex items-center py-2 text-black font-bold text-sm md:text-sm lg:text-base cursor-pointer rounded px-2 transition-all duration-200 group/sub"
                   >
                     <span className="mr-2 h-1 w-4 bg-black transform scale-x-0 origin-left group-hover/sub:scale-x-100 transition-transform duration-300"></span>
                     <span className="transform transition-transform duration-300 group-hover/sub:translate-x-2">
@@ -163,7 +163,7 @@ export default function NavBar() {
                   </a>
                   <a
                     href="mailto:info@procr8hub.com"
-                    className="flex items-center py-2 text-black font-bold text-lg cursor-pointer hover:bg-gray-50 rounded px-2 transition-all duration-200 group/sub"
+                    className="flex items-center py-2 text-black font-bold text-sm md:text-sm lg:text-base cursor-pointer hover:bg-gray-50 rounded px-2 transition-all duration-200 group/sub"
                   >
                     <span className="mr-2 h-1 w-4 bg-black transform scale-x-0 origin-left group-hover/sub:scale-x-100 transition-transform duration-300"></span>
                     <span className="transform transition-transform duration-300 group-hover/sub:translate-x-2">
