@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-white text-black py-16 px-6 md:px-10">
+    <section className="bg-white text-black py-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
       <div className="max-w-7xl mx-auto space-y-24 md:space-y-32">
         {testimonials.map((testimonial, index) => (
           <div
@@ -41,15 +41,17 @@ export default function TestimonialsSection() {
                 index % 2 === 0 ? "md:order-2" : "md:order-1"
               } space-y-2`}
             >
-              <div className="text-5xl md:text-6xl lg:text-7xl">"</div>
-              <p className="text-xl md:text-2xl lg:text-[32px] font-medium leading-relaxed">
+              <div className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+                "
+              </div>
+              <p className="text-xl md:text-2xl lg:text-[32px] xl:text-[38px] 2xl:text-[44px] font-medium leading-relaxed">
                 {testimonial.quote}
               </p>
               <div className="pt-2">
-                <p className="font-medium text-lg md:text-xl">
+                <p className="font-medium text-lg md:text-xl lg:text-2xl xl:text-[26px]">
                   {testimonial.name}
                 </p>
-                <p className="text-gray-500 text-sm md:text-base">
+                <p className="text-gray-500 text-sm md:text-base lg:text-lg">
                   {testimonial.role}
                 </p>
               </div>

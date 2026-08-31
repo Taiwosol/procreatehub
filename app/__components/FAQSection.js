@@ -43,7 +43,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 px-10 bg-white">
+    <section className="py-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">

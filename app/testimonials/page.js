@@ -7,7 +7,7 @@ import CTASection from "../__components/CTASection";
 export default function Page() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="pt-32 pb-0 px-6 md:px-20 lg:px-10">
+      <section className="pt-32 pb-0 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
             <div className="space-y-6">

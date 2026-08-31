@@ -37,7 +37,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-10">
+      <section className="pt-32 pb-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
             A curated collection of our services across print, brand, packaging,
@@ -47,7 +47,7 @@ export default function Page() {
       </section>
 
       {/* Album Section */}
-      <section className="pb-16 px-6 md:px-20 lg:px-10">
+      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {albums.map((album, index) => (

@@ -101,7 +101,7 @@ export default function GallerySection() {
                 )}
 
                 {/* Overlay Content to match screenshots */}
-                <div className="absolute inset-0 p-10 flex flex-col justify-between text-white z-10 pointer-events-none">
+                <div className="absolute inset-0 p-6 md:p-8 lg:p-6 xl:p-5 2xl:p-4 flex flex-col justify-between text-white z-10 pointer-events-none">
                   {/* Top Section */}
                   <div className="flex justify-between items-start">
                     <div className="space-y-0.5">

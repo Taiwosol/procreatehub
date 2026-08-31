@@ -17,7 +17,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-6 md:px-20 lg:px-10">
+      <section className="relative pt-32 pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
         <div className="max-w-7xl mx-auto">
           {/* Hero Text */}
           <div className="flex flex-col md:flex-col justify-between items-start  mb-12 gap-8">
@@ -208,7 +208,7 @@ export default function Page() {
       </section>
 
       {/* Full Width Image + Text Section */}
-      <section className="pb-16 px-6 md:px-20 lg:px-10">
+      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
         {/* Text */}
         <div className="pb-16">
           <div className="max-w-7xl mx-auto space-y-12">

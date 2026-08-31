@@ -521,7 +521,7 @@ export default function HeroPremium() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-12 h-full">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-6 xl:px-5 2xl:px-4 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-20 h-full items-center gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
           <motion.div
             style={{ y: textScrollY }}
@@ -530,7 +530,7 @@ export default function HeroPremium() {
             <div ref={badgeRef} className="mb-8 lg:mb-10">
               <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-50 border border-red-100 shadow-sm">
                 <PulsingDot />
-                <span className="text-red-600 text-xs lg:text-sm font-bold uppercase tracking-[0.18em]">
+                <span className="text-red-600 text-xs lg:text-sm xl:text-base font-bold uppercase tracking-[0.18em]">
                   CREATE • BRAND • IMPACT
                 </span>
               </div>
@@ -538,7 +538,7 @@ export default function HeroPremium() {
 
             <h1
               ref={headingRef}
-              className="text-[1.9rem] sm:text-[2.2rem] lg:text-[2.7rem] xl:text-[3.1rem] font-black text-gray-950 tracking-tight mb-8 lg:mb-10 leading-[1.02]"
+              className="text-[1.9rem] sm:text-[2.2rem] lg:text-[2.7rem] xl:text-[3.4rem] 2xl:text-[3.9rem] font-black text-gray-950 tracking-tight mb-8 lg:mb-10 leading-[1.02]"
             >
               Premium Print Production &amp; Branding Solutions That Bring{" "}
               <span className="text-red-600">Ideas</span> To Life
@@ -546,7 +546,7 @@ export default function HeroPremium() {
 
             <p
               ref={paraRef}
-              className="text-gray-600 leading-relaxed text-sm md:text-base max-w-xl mb-10 lg:mb-12"
+              className="text-gray-600 leading-relaxed text-sm md:text-base lg:text-lg xl:text-[1.05rem] 2xl:text-xl max-w-xl mb-10 lg:mb-12"
               style={{ opacity: 0 }}
             >
               We partner with businesses, organizations and institutions to
@@ -598,7 +598,7 @@ export default function HeroPremium() {
                   <div className="flex items-center justify-center w-7 h-7 rounded-full bg-red-50 ring-1 ring-red-100 shrink-0">
                     <Check className="w-4 h-4 text-red-600" strokeWidth={3} />
                   </div>
-                  <span className="text-gray-600 leading-relaxed text-sm md:text-base font-semibold">
+                  <span className="text-gray-600 leading-relaxed text-sm md:text-base lg:text-lg font-semibold">
                     {item.label}
                   </span>
                 </div>
@@ -761,10 +761,10 @@ export default function HeroPremium() {
                     />
                   </div>
                   <div className="leading-tight">
-                    <div className="text-[15px] font-black text-gray-900">
+                    <div className="text-[15px] xl:text-[17px] font-black text-gray-900">
                       500+
                     </div>
-                    <div className="text-[11px] font-medium text-gray-500 tracking-wide uppercase">
+                    <div className="text-[11px] xl:text-[12px] font-medium text-gray-500 tracking-wide uppercase">
                       Projects Delivered
                     </div>
                   </div>
@@ -788,10 +788,10 @@ export default function HeroPremium() {
                     />
                   </div>
                   <div className="leading-tight whitespace-nowrap">
-                    <div className="text-[14px] font-black text-gray-900">
+                    <div className="text-[14px] xl:text-[16px] font-black text-gray-900">
                       Nationwide
                     </div>
-                    <div className="text-[11px] font-medium text-gray-500 tracking-wide uppercase">
+                    <div className="text-[11px] xl:text-[12px] font-medium text-gray-500 tracking-wide uppercase">
                       Trusted Service
                     </div>
                   </div>
@@ -817,10 +817,10 @@ export default function HeroPremium() {
                     />
                   </div>
                   <div className="leading-tight whitespace-nowrap">
-                    <div className="text-[14px] font-black text-gray-900">
+                    <div className="text-[14px] xl:text-[16px] font-black text-gray-900">
                       End-to-End
                     </div>
-                    <div className="text-[11px] font-medium text-gray-500 tracking-wide uppercase">
+                    <div className="text-[11px] xl:text-[12px] font-medium text-gray-500 tracking-wide uppercase">
                       Production
                     </div>
                   </div>
@@ -841,7 +841,7 @@ export default function HeroPremium() {
                     className="w-4 h-4 text-red-600"
                     strokeWidth={2.25}
                   />
-                  <span className="text-[12px] font-bold tracking-wide text-gray-800 uppercase">
+                  <span className="text-[12px] xl:text-[13px] font-bold tracking-wide text-gray-800 uppercase">
                     Create. Brand. Impact.
                   </span>
                 </div>
