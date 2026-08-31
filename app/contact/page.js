@@ -11,7 +11,7 @@ export default function Page() {
     <main className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className=" mx-auto px-8">
           <div className="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-3xl tracking-tight">
               Tell us about your project, and we&apos;ll help bring your vision

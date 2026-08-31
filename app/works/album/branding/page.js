@@ -9,7 +9,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className=" mx-auto px-8">
           {/* Desktop Top Row */}
           <div className="hidden md:flex flex-row justify-between items-start mb-12">
             <span className="text-4xl md:text-6xl lg:text-[72px] font-medium text-black">

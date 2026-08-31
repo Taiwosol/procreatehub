@@ -37,8 +37,8 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-32 pb-16 px-8">
+        <div className=" mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight">
             A curated collection of our services across print, brand, packaging,
             and gifts.

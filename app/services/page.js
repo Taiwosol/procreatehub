@@ -18,7 +18,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative pt-32 pb-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className=" mx-auto px-8">
           {/* Hero Text */}
           <div className="flex flex-col md:flex-col justify-between items-start  mb-12 gap-8">
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-4xl tracking-tight">

@@ -30,7 +30,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <section className="bg-white text-black py-16">
-      <div className="max-w-7xl mx-auto px-6 space-y-24 md:space-y-32">
+      <div className=" mx-auto px-8 space-y-24 md:space-y-32">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
