@@ -8,8 +8,8 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative pt-32 pb-16">
+        <div className="max-w-7xl mx-auto px-6">
           {/* Desktop Top Row */}
           <div className="hidden md:flex flex-row justify-between items-start mb-12">
             <span className="text-4xl md:text-6xl lg:text-[72px] font-medium text-black">
@@ -108,7 +108,7 @@ export default function Page() {
       </section>
 
       {/* Image 02 - 09 Grid */}
-      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
+      <section className="pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <div className="space-y-8">
@@ -198,7 +198,7 @@ export default function Page() {
       </section>
 
       {/* The Result Section */}
-      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
+      <section className="pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
             <h2 className="text-2xl font-medium text-neutral-800">
@@ -218,7 +218,7 @@ export default function Page() {
       </section>
 
       {/* Next Project Section */}
-      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
+      <section className="pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl font-medium mb-8 text-neutral-800">
             Next Project

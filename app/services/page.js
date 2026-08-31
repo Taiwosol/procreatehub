@@ -17,8 +17,8 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative pt-32 pb-16">
+        <div className="max-w-7xl mx-auto px-6">
           {/* Hero Text */}
           <div className="flex flex-col md:flex-col justify-between items-start  mb-12 gap-8">
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-4xl tracking-tight">
@@ -61,7 +61,7 @@ export default function Page() {
       </section>
 
       {/* Intro Section */}
-      <section id="intro-section" className="pb-16 px-6 md:px-20 lg:px-10">
+      <section id="intro-section" className="pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
@@ -98,7 +98,7 @@ export default function Page() {
       </section>
 
       {/* What We Do Section */}
-      <section className="pb-16 px-6 md:px-20 lg:px-10">
+      <section className="pb-16 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black mb-16 tracking-tight">
             What We Do
@@ -208,7 +208,7 @@ export default function Page() {
       </section>
 
       {/* Full Width Image + Text Section */}
-      <section className="pb-16 px-6 md:px-10 lg:px-6 xl:px-5 2xl:px-4">
+      <section className="pb-16 px-6">
         {/* Text */}
         <div className="pb-16">
           <div className="max-w-7xl mx-auto space-y-12">
@@ -245,7 +245,7 @@ export default function Page() {
         </div>
         {/* Remaining Text */}
         <div className="pt-16">
-          <div className="max-w-7xl mx-auto space-y-12">
+          <div className="max-w-7xl mx-auto px-6 space-y-12">
             <p className="text-xl md:text-2xl font-normal text-neutral-700 leading-relaxed">
               We&apos;re proud to have served diverse clients — from local
               startups to nationwide corporate brands — helping each one build
@@ -262,7 +262,7 @@ export default function Page() {
       </section>
 
       {/* Full Width Images Section */}
-      <section className="space-y-0 pb-16 px-10">
+      <section className="space-y-0 pb-16 px-6">
         {/* Mobile: AboutSection pattern (800x600 w-full h-auto) */}
         <div className="md:hidden">
           <Image

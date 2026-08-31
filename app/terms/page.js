@@ -3,8 +3,8 @@ import FooterDark from "../__components/FooterDark";
 export default function TermsPage() {
   return (
     <main className="flex flex-col flex-1 bg-white min-h-screen">
-      <section className="pt-32 pb-16 px-6 md:px-20 lg:px-10">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-32 pb-16">
+        <div className="max-w-7xl mx-auto px-6">
           <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight mb-12">
             Terms &amp; Conditions
           </h1>

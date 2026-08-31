@@ -81,9 +81,9 @@ export default function TrustSection() {
   return (
     <section
       ref={sectionRef}
-      className="parkinsans pt-4 md:pt-6 pb-6 md:pb-10 px-4 sm:px-6 lg:px-6 xl:px-5 2xl:px-4 bg-white"
+      className="parkinsans pt-4 md:pt-6 pb-6 md:pb-10 bg-white"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="space-y-6">
           <div className="mb-16 w-full space-y-6 lg:max-w-[620px] xl:max-w-[680px]">
             <h2 className="text-3xl md:text-5xl lg:text-[54px] xl:text-[62px] 2xl:text-[70px] font-medium leading-[1.1] max-w-6xl tracking-tight text-black">

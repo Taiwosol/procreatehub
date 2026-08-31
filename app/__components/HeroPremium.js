@@ -521,7 +521,7 @@ export default function HeroPremium() {
         />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-6 xl:px-5 2xl:px-4 h-full">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 h-full">
         <div className="grid grid-cols-1 lg:grid-cols-20 h-full items-center gap-10 lg:gap-16 min-h-[calc(100vh-8rem)]">
           <motion.div
             style={{ y: textScrollY }}

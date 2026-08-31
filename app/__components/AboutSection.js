@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white text-black pt-6 md:pt-10 pb-16 md:pb-20 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white text-black pt-6 md:pt-10 pb-16 md:pb-20">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Label and Main Heading */}
         <div className="mb-10 lg:mb-12">
           <p className="text-xs md:text-sm xl:text-base text-gray-500 mb-6">

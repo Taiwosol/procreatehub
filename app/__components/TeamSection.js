@@ -44,8 +44,8 @@ const leadership = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-white text-black pt-4 pb-16 px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white text-black pt-4 pb-16">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="space-y-16">
           {/* Leadership Section */}
           <div>

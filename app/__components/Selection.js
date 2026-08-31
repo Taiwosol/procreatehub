@@ -64,7 +64,7 @@ export default function Selection() {
           className="sticky top-0 h-screen flex-shrink-0 flex flex-col md:flex-row"
         >
           {/* Left Content */}
-          <div className="w-full md:w-1/2 bg-white px-6 md:px-8 lg:px-6 xl:px-5 2xl:px-4 py-10 flex flex-col justify-between">
+          <div className="w-full md:w-1/2 bg-white px-6 py-10 flex flex-col justify-between">
             {/* Top Number */}
             <div>
               <span className="text-4xl md:text-6xl font-medium">

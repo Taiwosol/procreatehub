@@ -39,7 +39,7 @@ export default function FooterDark() {
     <footer className="bg-white py-0 w-full">
       {/* Newsletter Section (Ash / Light Gray) - Full Width */}
       <div className="bg-neutral-300 border-t border-b border-neutral-400/50 py-6 md:py-8 w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-5 2xl:px-4">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
             {/* Left Column: Newsletter Heading & Copy */}
             <div className="space-y-6">
@@ -118,7 +118,7 @@ export default function FooterDark() {
 
       {/* Original Footer Texts (Black Background) - Full Width */}
       <div className="bg-black py-8 w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-5 2xl:px-4">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="space-y-5">
               <Link
