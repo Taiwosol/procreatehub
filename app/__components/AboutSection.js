@@ -5,7 +5,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function AboutSection() {
   return (
-    <section className="bg-white text-black pt-10 md:pt-14 lg:pt-16 pb-16 md:pb-20 lg:pb-24">
+    <section className="bg-white text-black pt-8 md:pt-10 lg:pt-12 pb-8 md:pb-10 lg:pb-12">
       {/* Horizontal padding mirrors HeroCinematic so sections align down the page */}
       <div className="mx-auto px-6 sm:px-8 lg:px-10">
         {/* Label and Main Heading */}

@@ -12,7 +12,7 @@ export default function Page() {
     <main className="bg-white min-h-screen">
       {/* Hero Section */}
       <ScrollReveal>
-        <section className="pt-12 pb-16">
+        <section className="pt-8 pb-8 md:pt-10 md:pb-10">
           <div className=" mx-auto px-8">
             <div className="flex flex-col md:flex-row justify-between items-start mb-10 gap-8">
               <h1 className="text-[22px] sm:text-2xl md:text-[32px] lg:text-[38px] xl:text-[42px] font-medium leading-[1.15] text-black max-w-3xl tracking-tight">
@@ -155,9 +155,7 @@ export default function Page() {
       </ScrollReveal>
 
       {/* Footer */}
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

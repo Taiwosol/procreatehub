@@ -266,7 +266,7 @@ export default function HeroCinematic() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-16">
             <h1
               ref={headingRef}
-              className="max-w-[22ch] text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.9rem] xl:text-[3.4rem] 2xl:text-[3.9rem] font-medium uppercase tracking-tight leading-[0.95] text-white"
+              className="max-w-[22ch] text-[1.7rem] sm:text-[2.25rem] md:text-[2.75rem] lg:text-[3.2rem] xl:text-[3.75rem] 2xl:text-[4.3rem] font-medium uppercase tracking-tight leading-[0.95] text-white"
               style={{ opacity: 0 }}
             >
               Premium Print Production &amp; Branding Solutions That Bring{" "}
@@ -275,7 +275,7 @@ export default function HeroCinematic() {
 
             <p
               ref={paraRef}
-              className="text-sm lg:text-[13px] xl:text-sm leading-relaxed text-white/70 max-w-md lg:max-w-[300px] xl:max-w-[340px] lg:text-justify shrink-0"
+              className="text-[13px] lg:text-xs xl:text-[13px] leading-relaxed text-white/70 max-w-md lg:max-w-[300px] xl:max-w-[340px] lg:text-justify shrink-0"
               style={{ opacity: 0 }}
             >
               At ProCr8Hub, we partner with businesses, organizations and

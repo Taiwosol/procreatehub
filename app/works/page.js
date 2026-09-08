@@ -39,7 +39,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <ScrollReveal>
-        <section className="pt-12 pb-16 px-8">
+        <section className="pt-8 pb-8 md:pt-10 md:pb-10 px-8">
           <div className=" mx-auto">
             <h1 className="text-[22px] sm:text-2xl md:text-[32px] lg:text-[38px] xl:text-[42px] font-medium leading-[1.15] text-black max-w-4xl tracking-tight">
               A curated collection of our services across print, brand, packaging,
@@ -51,7 +51,7 @@ export default function Page() {
 
       {/* Album Section */}
       <ScrollReveal>
-        <section className="pb-16">
+        <section className="pb-8 md:pb-10">
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {albums.map((album, index) => (
@@ -83,9 +83,7 @@ export default function Page() {
       </ScrollReveal>
 
       {/* Footer */}
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

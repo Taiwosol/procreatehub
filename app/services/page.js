@@ -19,7 +19,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <ScrollReveal>
-        <section className="relative pt-12 pb-16">
+        <section className="relative pt-8 pb-8 md:pt-10 md:pb-10">
           <div className=" mx-auto px-8">
             {/* Hero Text */}
             <div className="flex flex-col md:flex-col justify-between items-start  mb-12 gap-8">
@@ -65,7 +65,7 @@ export default function Page() {
 
       {/* Intro Section */}
       <ScrollReveal>
-        <section id="intro-section" className="pb-16 px-6">
+        <section id="intro-section" className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
@@ -105,7 +105,7 @@ export default function Page() {
 
       {/* What We Do Section */}
       <ScrollReveal direction="fade">
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-[22px] sm:text-2xl md:text-[32px] lg:text-[38px] xl:text-[42px] font-medium leading-[1.15] text-black mb-16 tracking-tight">
               What We Do
@@ -217,7 +217,7 @@ export default function Page() {
 
       {/* Full Width Image + Text Section */}
       <ScrollReveal>
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-start md:items-center">
             {/* Image — first on mobile, left column on desktop */}
             <div className="order-1">
@@ -260,7 +260,7 @@ export default function Page() {
 
       {/* Full Width Images Section */}
       <ScrollReveal>
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="relative w-full aspect-[4/3] md:aspect-square overflow-hidden rounded-sm">
               <Image
@@ -290,9 +290,7 @@ export default function Page() {
       <CTASection />
 
       {/* Footer */}
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

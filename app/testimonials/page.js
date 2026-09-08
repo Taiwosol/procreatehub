@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       <ScrollReveal>
-        <section className="pt-12 pb-0">
+        <section className="pt-8 md:pt-10 pb-0">
           <div className=" mx-auto px-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-8">
               <div className="space-y-6">
@@ -42,9 +42,7 @@ export default function Page() {
 
       <CTASection />
 
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

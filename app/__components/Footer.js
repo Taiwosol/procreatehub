@@ -7,7 +7,6 @@ const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About us" },
   { href: "/works", label: "Works" },
-  { href: "/pricing", label: "Packages" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -234,7 +233,7 @@ export default function Footer() {
   return (
     <footer className="parkinsans bg-white w-full">
       {/* Newsletter Section (Ash / Light Gray) - Full Width */}
-      <div className="bg-neutral-300 border-t border-b border-neutral-400/50 py-14 md:py-16 lg:py-20 w-full">
+      <div className="bg-neutral-300 border-t border-b border-neutral-400/50 py-8 md:py-10 lg:py-12 w-full">
         {/* Horizontal padding mirrors HeroCinematic so sections align down the page */}
         <div className="mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-start">
@@ -315,7 +314,7 @@ export default function Footer() {
       </div>
 
       {/* Original Footer Texts (Black Background) - Full Width */}
-      <div className="bg-black pt-14 md:pt-16 lg:pt-20 pb-8 lg:pb-10 w-full">
+      <div className="bg-black pt-8 md:pt-10 lg:pt-12 pb-8 lg:pb-10 w-full">
         <div className="mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 md:gap-12 lg:gap-16">
             <div className="sm:col-span-2 lg:col-span-4 lg:pr-10">

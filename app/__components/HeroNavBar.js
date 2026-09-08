@@ -14,6 +14,10 @@ const navLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+/* The desktop bar leans on the logo to get you home; the mobile overlay covers
+   it, so the overlay gets its own Home entry ahead of the shared links. */
+const mobileNavLinks = [{ name: "Home", href: "/" }, ...navLinks];
+
 const OPEN_HOURS = "Monday - Saturday 9AM-7PM";
 
 /* The nav sits on the dark hero on the homepage and on white inner pages, so
@@ -217,7 +221,7 @@ export default function HeroNavBar({ variant = "dark" }) {
             </motion.button>
 
             <div className="flex h-full flex-col justify-center gap-7 px-8 text-2xl font-medium">
-              {navLinks.map((link, i) => (
+              {mobileNavLinks.map((link, i) => (
                 <motion.div
                   key={link.href}
                   initial={{ opacity: 0, y: 26 }}
@@ -241,7 +245,7 @@ export default function HeroNavBar({ variant = "dark" }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 0.7,
-                  delay: 0.08 * navLinks.length,
+                  delay: 0.08 * mobileNavLinks.length,
                   ease: easeOutExpo,
                 }}
                 className="pt-4"

@@ -10,7 +10,7 @@ export default function Page() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <ScrollReveal>
-        <section className="relative pt-12 pb-16">
+        <section className="relative pt-8 pb-8 md:pt-10 md:pb-10">
           <div className=" mx-auto px-8">
             {/* Desktop Top Row */}
             <div className="hidden md:flex flex-row justify-between items-start mb-12">
@@ -100,7 +100,7 @@ export default function Page() {
 
       {/* Image 01 */}
       <ScrollReveal>
-        <section className="pb-16">
+        <section className="pb-8 md:pb-10">
           <div className="relative w-full aspect-[16/9] overflow-hidden group">
             <Image
               src="/branding-album-img.jpg"
@@ -114,7 +114,7 @@ export default function Page() {
 
       {/* Image 02 - 09 Grid */}
       <ScrollReveal>
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               <div className="space-y-8">
@@ -206,7 +206,7 @@ export default function Page() {
 
       {/* The Result Section */}
       <ScrollReveal>
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               <h2 className="text-2xl font-medium text-neutral-800">
@@ -227,7 +227,7 @@ export default function Page() {
 
       {/* Next Project Section */}
       <ScrollReveal>
-        <section className="pb-16 px-6">
+        <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-2xl font-medium mb-8 text-neutral-800">
               Next Album
@@ -256,9 +256,7 @@ export default function Page() {
       </ScrollReveal>
 
       {/* Footer */}
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

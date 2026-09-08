@@ -1,5 +1,4 @@
 import HeroCinematic from "./__components/HeroCinematic";
-import ScrollReveal from "./__components/ScrollReveal";
 import AboutSection from "./__components/AboutSection";
 import GallerySection from "./__components/GallerySection";
 // import Selection from "./__components/Selection";
@@ -18,21 +17,13 @@ export default function Home() {
       <GallerySection />
       {/* <Selection /> */}
 
-      <ScrollReveal>
-        <TestimonialsSection limit={1} />
-      </ScrollReveal>
+      <TestimonialsSection limit={1} />
 
-      <ScrollReveal>
-        <FAQSection />
-      </ScrollReveal>
+      <FAQSection />
 
-      <ScrollReveal>
-        <CtaSection />
-      </ScrollReveal>
+      <CtaSection />
 
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </>
   );
 }

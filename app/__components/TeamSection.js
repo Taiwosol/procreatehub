@@ -99,7 +99,7 @@ function PeopleGroup({ title, people }) {
 
 export default function TeamSection() {
   return (
-    <section className="bg-white text-black pt-4 pb-16">
+    <section className="bg-white text-black pt-4 pb-8 md:pb-10">
       <div className=" mx-auto px-8">
         <div className="space-y-16 md:space-y-20 lg:space-y-24">
           <PeopleGroup title="Meet Our Team" people={leadership} />

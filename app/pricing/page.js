@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       <ScrollReveal>
-        <section className="pt-12 pb-16">
+        <section className="pt-8 pb-8 md:pt-10 md:pb-10">
           <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
               <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-4xl tracking-tight">
@@ -29,9 +29,7 @@ export default function Page() {
         </section>
       </ScrollReveal>
 
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

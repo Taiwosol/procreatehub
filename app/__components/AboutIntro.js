@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function AboutIntro() {
   return (
-    <section className="bg-white text-black pt-10 md:pt-14 lg:pt-16 pb-16 md:pb-20 lg:pb-24">
+    <section className="bg-white text-black pt-8 md:pt-10 lg:pt-12 pb-8 md:pb-10 lg:pb-12">
       {/* Padding mirrors the hero above so both columns share its left edge */}
       <div className="mx-auto px-8">
         {/* Two columns: a short black statement on the left, the longer grey

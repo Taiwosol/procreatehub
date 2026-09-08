@@ -31,7 +31,7 @@ export default function TestimonialsSection({ limit }) {
   const shown = limit ? testimonials.slice(0, limit) : testimonials;
 
   return (
-    <section className="bg-white text-black py-16">
+    <section className="bg-white text-black py-8 md:py-10">
       <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-24 md:space-y-32">
         {shown.map((testimonial, index) => (
           <div

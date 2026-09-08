@@ -5,7 +5,7 @@ export default function TermsPage() {
   return (
     <main className="flex flex-col flex-1 bg-white min-h-screen">
       <ScrollReveal>
-        <section className="pt-12 pb-16">
+        <section className="pt-8 pb-8 md:pt-10 md:pb-10">
           <div className=" mx-auto px-8">
             <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black tracking-tight mb-12">
               Terms &amp; Conditions
@@ -471,9 +471,7 @@ export default function TermsPage() {
           </div>
         </section>
       </ScrollReveal>
-      <ScrollReveal direction="fade">
-        <Footer />
-      </ScrollReveal>
+      <Footer />
     </main>
   );
 }

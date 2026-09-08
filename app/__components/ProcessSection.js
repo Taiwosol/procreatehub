@@ -30,7 +30,7 @@ const processes = [
 
 export default function ProcessSection() {
   return (
-    <section className="bg-white text-black pt-16 pb-4">
+    <section className="bg-white text-black pt-8 md:pt-10 pb-4">
       <div className=" mx-auto px-8">
         {/* <h2 className="text-4xl md:text-5xl lg:text-[64px] font-normal mb-16 tracking-tight">
           Our process
