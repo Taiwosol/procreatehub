@@ -1,41 +1,38 @@
-import HeroPremium from "./__components/HeroPremium";
-import TrustSection from "./__components/TrustSection";
+import HeroCinematic from "./__components/HeroCinematic";
+import ScrollReveal from "./__components/ScrollReveal";
 import AboutSection from "./__components/AboutSection";
 import GallerySection from "./__components/GallerySection";
-import Selection from "./__components/Selection";
-// import AwardSection from "./__components/AwardSection";
+// import Selection from "./__components/Selection";
 import TestimonialsSection from "./__components/TestimonialsSection";
+import FAQSection from "./__components/FAQSection";
 import CtaSection from "./__components/CTASection";
-import FooterDark from "./__components/FooterDark";
-// import JournalImages from "./__components/JournalImages";
+import Footer from "./__components/Footer";
 
 export default function Home() {
   return (
     <>
-      <HeroPremium />
-      <TrustSection />
+      <HeroCinematic />
 
       <AboutSection />
+
       <GallerySection />
-      <Selection />
+      {/* <Selection /> */}
 
-      {/* Cool Girl Video */}
-      {/* <section className="relative w-full h-screen overflow-hidden">
-        <video
-          src="/cool-girl.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </section> */}
+      <ScrollReveal>
+        <TestimonialsSection limit={1} />
+      </ScrollReveal>
 
-      {/* <AwardSection /> */}
-      <TestimonialsSection />
-      {/* <JournalImages /> */}
-      <CtaSection />
-      <FooterDark />
+      <ScrollReveal>
+        <FAQSection />
+      </ScrollReveal>
+
+      <ScrollReveal>
+        <CtaSection />
+      </ScrollReveal>
+
+      <ScrollReveal direction="fade">
+        <Footer />
+      </ScrollReveal>
     </>
   );
 }

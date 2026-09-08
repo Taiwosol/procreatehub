@@ -61,6 +61,9 @@ export default function GallerySection() {
   // We have 4 items, each 100vw. To see the last one, we translate by 3 * 100vw = 300vw
   const x = useTransform(scrollYProgress, [0, 1], ["0vw", "-300vw"]);
 
+  // Cards start inset with padding, then expand to full-bleed as the user scrolls
+  const padScale = useTransform(scrollYProgress, [0, 0.06], [1, 0]);
+
   return (
     <section ref={targetRef} className="relative h-[400vh] bg-white">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
@@ -68,70 +71,78 @@ export default function GallerySection() {
           {albums.map((album) => (
             <div
               key={album.id}
-              className="relative h-screen w-screen flex-shrink-0"
+              className="relative h-screen w-screen flex-shrink-0 px-[3px] md:px-[4px] lg:px-[6px]"
             >
-              <Link
-                href={album.link}
-                className="block w-full h-full relative group overflow-hidden"
+              <motion.div
+                style={{ "--pad-scale": padScale }}
+                className="h-full w-full p-[calc(var(--pad-scale)*0.75rem)] md:p-[calc(var(--pad-scale)*1.5rem)] xl:p-[calc(var(--pad-scale)*2.5rem)]"
               >
-                <Image
-                  src={album.image}
-                  alt={album.title}
-                  fill
-                  priority={album.id === 1}
-                  className="hidden md:block object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-                {album.mobileImage && (
-                  <Image
-                    src={album.mobileImage}
-                    alt={album.title}
-                    fill
-                    priority={album.id === 1}
-                    className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
-                  />
-                )}
-                {!album.mobileImage && (
+                <Link
+                  href={album.link}
+                  className="block w-full h-full relative group overflow-hidden"
+                >
                   <Image
                     src={album.image}
                     alt={album.title}
                     fill
                     priority={album.id === 1}
-                    className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
+                    className="hidden md:block object-cover transition-transform duration-1000 group-hover:scale-105"
                   />
-                )}
+                  {album.mobileImage && (
+                    <Image
+                      src={album.mobileImage}
+                      alt={album.title}
+                      fill
+                      priority={album.id === 1}
+                      className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
+                    />
+                  )}
+                  {!album.mobileImage && (
+                    <Image
+                      src={album.image}
+                      alt={album.title}
+                      fill
+                      priority={album.id === 1}
+                      className="block md:hidden object-cover transition-transform duration-1000 group-hover:scale-105"
+                    />
+                  )}
 
-                {/* Overlay Content to match screenshots */}
-                <div className="absolute inset-0 p-6 md:p-8 lg:p-6 xl:p-5 2xl:p-4 flex flex-col justify-between text-white z-10 pointer-events-none">
-                  {/* Top Section */}
-                  <div className="flex justify-between items-start">
-                    <div className="space-y-0.5">
-                      <h3 className="text-4xl md:text-7xl font-bold tracking-tight leading-tight">
-                        {album.title}
-                      </h3>
+                  {/* Overlay Content to match screenshots */}
+                  <div className="absolute inset-0 p-6 md:p-8 lg:p-6 xl:p-5 2xl:p-4 flex flex-col justify-between text-white z-10 pointer-events-none">
+                    {/* Top Section */}
+                    <div className="flex justify-between items-start">
+                      <div className="space-y-0.5">
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
+                          {album.title} Gallery
+                        </h3>
+                      </div>
+
+                      {/* Index Indicator */}
+                      <div className="flex items-center gap-2 border border-white/40 px-3 py-1.5 bg-black/5 backdrop-blur-sm text-xs md:text-sm font-medium">
+                        <span>{album.index}</span>
+                        <span className="opacity-40">|</span>
+                        <span className="opacity-40">04</span>
+                      </div>
                     </div>
 
-                    {/* Index Indicator */}
-                    <div className="flex items-center gap-2 border border-white/40 px-3 py-1.5 bg-black/5 backdrop-blur-sm text-xs md:text-sm font-medium">
-                      <span>{album.index}</span>
-                      <span className="opacity-40">|</span>
-                      <span className="opacity-40">04</span>
+                    {/* Bottom Section */}
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                      <p className="max-w-sm text-xs md:text-base font-light leading-relaxed opacity-90">
+                        {album.description}
+                      </p>
+                      <p className="text-xs md:text-base font-bold uppercase tracking-widest mb-1">
+                        {album.genre}
+                      </p>
                     </div>
                   </div>
 
-                  {/* Bottom Section */}
-                  <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
-                    <p className="max-w-sm text-sm md:text-xl font-light leading-relaxed opacity-90">
-                      {album.description}
-                    </p>
-                    <p className="text-xs md:text-base font-bold uppercase tracking-widest mb-1">
-                      {album.genre}
-                    </p>
-                  </div>
-                </div>
+                  {/* Subtle gradient overlay for text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 opacity-70 group-hover:opacity-50 transition-opacity duration-700" />
 
-                {/* Subtle gradient overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 opacity-70 group-hover:opacity-50 transition-opacity duration-700" />
-              </Link>
+                  {/* Transparent white wash on hover */}
+                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
+                </Link>
+              </motion.div>
             </div>
           ))}
         </motion.div>

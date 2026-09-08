@@ -54,7 +54,7 @@ export default function FAQSection() {
             <p className="text-xs md:text-sm leading-relaxed text-black">
               Got questions about prints, branding, packaging, or delivery?
               We&apos;ve got answers. Here are the most common questions we hear
-              — and everything you need to know before you start a project with
+              and everything you need to know before you start a project with
               us.
             </p>
           </div>

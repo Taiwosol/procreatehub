@@ -2,13 +2,21 @@
 
 import nodemailer from "nodemailer";
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 export async function sendInquiry(prevState, formData) {
   const firstName = formData.get("firstName");
   const lastName = formData.get("lastName");
   const email = formData.get("email");
   const businessName = formData.get("businessName");
-  const businessWebsite = formData.get("businessWebsite");
   const service = formData.get("service");
+  const projectBrief = formData.get("projectBrief");
 
   if (!firstName || !lastName || !email || !service) {
     return {
@@ -28,23 +36,25 @@ export async function sendInquiry(prevState, formData) {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.CONTACT_EMAIL || process.env.EMAIL_USER,
+    replyTo: email,
     subject: `New Service Inquiry from ${firstName} ${lastName}`,
     text: `
       You have a new service inquiry:
-      
+
       Name: ${firstName} ${lastName}
-      Email: ${email}
+      Business Email: ${email}
       Business Name: ${businessName || "N/A"}
-      Business Website: ${businessWebsite || "N/A"}
       Preferred Service: ${service}
+      Project Brief: ${projectBrief || "N/A"}
     `,
     html: `
       <h2>New Service Inquiry</h2>
-      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Business Name:</strong> ${businessName || "N/A"}</p>
-      <p><strong>Business Website:</strong> ${businessWebsite || "N/A"}</p>
-      <p><strong>Preferred Service:</strong> ${service}</p>
+      <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
+      <p><strong>Business Email:</strong> ${escapeHtml(email)}</p>
+      <p><strong>Business Name:</strong> ${escapeHtml(businessName || "N/A")}</p>
+      <p><strong>Preferred Service:</strong> ${escapeHtml(service)}</p>
+      <p><strong>Project Brief:</strong></p>
+      <p style="white-space: pre-wrap;">${escapeHtml(projectBrief || "N/A")}</p>
     `,
   };
 

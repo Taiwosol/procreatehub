@@ -1,27 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import AboutSection from "../__components/AboutSection";
+import AboutIntro from "../__components/AboutIntro";
 import ProcessSection from "../__components/ProcessSection";
 
 import TeamSection from "../__components/TeamSection";
 import TestimonialsSection from "../__components/TestimonialsSection";
 import FAQSection from "../__components/FAQSection";
-import FooterDark from "../__components/FooterDark";
+import Footer from "../__components/Footer";
+import ScrollReveal from "../__components/ScrollReveal";
 import heroImg from "../../public/about-hero-img.jpg";
 
 export default function Page() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16">
+      <section className="relative pt-12 pb-16">
         <div className=" mx-auto px-8">
           {/* Hero Text */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
-            <h1 className="text-4xl md:text-6xl lg:text-[72px] font-medium leading-[1.1] text-black max-w-4xl tracking-tight">
+          <ScrollReveal className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
+            <h1 className="text-[22px] sm:text-2xl md:text-[32px] lg:text-[38px] xl:text-[42px] font-medium leading-[1.15] text-black max-w-4xl tracking-tight">
               At ProCr8Hub, we turn ideas into impressions. Every print,
-              package, and brand mark is crafted to make your business
-              unforgettable — not just noticed.
+              package and brand mark is built to be remembered, not just
+              noticed.
             </h1>
             <button
               onClick={() => {
@@ -34,25 +35,28 @@ export default function Page() {
             >
               Scroll Down <span>↓</span>
             </button>
-          </div>
+          </ScrollReveal>
 
           {/* Hero Image */}
-          <div className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-sm">
+          <ScrollReveal
+            delay={0.15}
+            className="relative w-full aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-sm"
+          >
             <Image
               src={heroImg}
               fill
               priority
               className="object-cover"
-              alt="About ProCr8Hub — Premium Print & Branding Studio"
+              alt="About ProCr8Hub, premium print and branding studio"
               placeholder="blur"
             />
-          </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* About Section content */}
       <div id="about-content">
-        <AboutSection />
+        <AboutIntro />
         <ProcessSection />
         {/* <AwardSection /> */}
       </div>
@@ -75,8 +79,14 @@ export default function Page() {
       {/* Team and Testimonials Sections */}
       <div>
         <TeamSection />
-        <TestimonialsSection />
-        <FAQSection />
+
+        <ScrollReveal>
+          <TestimonialsSection />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <FAQSection />
+        </ScrollReveal>
         {/* <ImageSection /> */}
       </div>
 
@@ -84,7 +94,9 @@ export default function Page() {
       {/* <CTASection /> */}
 
       {/* Footer */}
-      <FooterDark />
+      <ScrollReveal direction="fade">
+        <Footer />
+      </ScrollReveal>
     </main>
   );
 }
