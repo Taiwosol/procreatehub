@@ -6,12 +6,12 @@ const faqs = [
   {
     question: "What services does ProCr8Hub offer?",
     answer:
-      "We offer end-to-end creative production solutions — premium print production, corporate branding and identity design, custom packaging, large-format signage and fabrication, corporate gifts and promotional merchandise, as well as procurement and nationwide delivery. Everything you need to bring your brand to life, under one roof.",
+      "We offer end-to-end creative production solutions — premium print production, corporate branding, custom packaging, signages and fabrication, corporate gifts and promotional merchandise, as well as procurement and nationwide delivery. One stop shop for Everything you need to bring your brand to life.",
   },
   {
     question: "How long does a typical printing or branding project take?",
     answer:
-      "Turnaround depends on scope and complexity. Standard business cards, flyers, and stationery usually take 3–5 working days. Custom packaging, signage, or large-scale branding projects typically range from 7–14 working days. We'll always confirm a clear timeline with you during the quotation stage, and rush options are available on request.",
+      "Turnaround depends on scope and complexity. Standard business cards, flyers, and stationery usually take 2–4 working days. Custom packaging, signage, or large-scale branding projects typically range from 4–8 working days. We'll always confirm a clear timeline with you during the quotation stage, and immediate or 24hrs printing and branding options are available on request.",
   },
   {
     question: "Do you deliver nationwide and what are the shipping costs?",

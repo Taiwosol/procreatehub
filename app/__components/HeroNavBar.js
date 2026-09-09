@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -20,12 +21,22 @@ const mobileNavLinks = [{ name: "Home", href: "/" }, ...navLinks];
 
 const OPEN_HOURS = "Monday - Saturday 9AM-7PM";
 
+/* A link owns the current page when the pathname matches it or sits beneath it,
+   so /works/album/branding still lights up "Works". "/" only ever matches "/". */
+function isRouteActive(pathname, href) {
+  if (!pathname) return false;
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 /* The nav sits on the dark hero on the homepage and on white inner pages, so
    every colour it paints is keyed off the background it is laid over. */
 const THEMES = {
   dark: {
     link: "text-white/85 hover:text-white",
+    linkActive: "text-white",
     bracket: "text-white/45 group-hover:text-white",
+    bracketActive: "text-white",
     underline: "bg-white",
     /* invert + 180deg hue-rotate lifts the dark wordmark to white while keeping
        the grey "Cr8" and the red mark intact — brightness-0 invert flattened
@@ -39,7 +50,9 @@ const THEMES = {
   },
   light: {
     link: "text-black/70 hover:text-black",
+    linkActive: "text-black",
     bracket: "text-black/35 group-hover:text-black",
+    bracketActive: "text-black",
     underline: "bg-black",
     logo: "",
     hoursIcon: "text-black",
@@ -50,26 +63,37 @@ const THEMES = {
   },
 };
 
-function BracketLink({ name, href, onClick, theme }) {
+/* The current page holds the hover state permanently: brackets spread, underline
+   drawn, full-strength text. */
+function BracketLink({ name, href, onClick, theme, isActive = false }) {
   return (
     <Link
       href={href}
       onClick={onClick}
-      className={`group relative inline-flex items-center gap-[2px] uppercase tracking-[0.12em] transition-colors duration-300 ${theme.link}`}
+      aria-current={isActive ? "page" : undefined}
+      className={`group relative inline-flex items-center gap-[2px] uppercase tracking-[0.12em] transition-colors duration-300 ${
+        isActive ? theme.linkActive : theme.link
+      }`}
     >
       <span
-        className={`transition-all duration-300 group-hover:-translate-x-[3px] ${theme.bracket}`}
+        className={`transition-all duration-300 group-hover:-translate-x-[3px] ${
+          isActive ? `-translate-x-[3px] ${theme.bracketActive}` : theme.bracket
+        }`}
       >
         (
       </span>
       <span className="relative">
         {name}
         <span
-          className={`absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 transition-transform duration-500 ease-out group-hover:scale-x-100 ${theme.underline}`}
+          className={`absolute -bottom-1 left-0 h-px w-full origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 ${
+            isActive ? "scale-x-100" : "scale-x-0"
+          } ${theme.underline}`}
         />
       </span>
       <span
-        className={`transition-all duration-300 group-hover:translate-x-[3px] ${theme.bracket}`}
+        className={`transition-all duration-300 group-hover:translate-x-[3px] ${
+          isActive ? `translate-x-[3px] ${theme.bracketActive}` : theme.bracket
+        }`}
       >
         )
       </span>
@@ -114,6 +138,7 @@ function OpenHours({ theme, className = "" }) {
 
 export default function HeroNavBar({ variant = "dark" }) {
   const theme = THEMES[variant] ?? THEMES.dark;
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -153,6 +178,7 @@ export default function HeroNavBar({ variant = "dark" }) {
               name={link.name}
               href={link.href}
               theme={theme}
+              isActive={isRouteActive(pathname, link.href)}
             />
           ))}
         </div>
@@ -237,6 +263,7 @@ export default function HeroNavBar({ variant = "dark" }) {
                     href={link.href}
                     onClick={closeMobile}
                     theme={theme}
+                    isActive={isRouteActive(pathname, link.href)}
                   />
                 </motion.div>
               ))}

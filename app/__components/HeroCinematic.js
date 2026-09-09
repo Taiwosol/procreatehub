@@ -40,8 +40,8 @@ const {
 
 /* Stats sourced from TrustSection */
 const HERO_STATS = [
-  { value: 500, suffix: "+", label: "projects delivered" },
-  { value: 200, suffix: "+", label: "happy clients" },
+  { value: 4000, suffix: "+", label: "projects delivered" },
+  { value: 300, suffix: "+", label: "happy clients" },
   { value: 15, suffix: "+", label: "services offered" },
 ];
 
