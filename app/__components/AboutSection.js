@@ -42,9 +42,9 @@ export default function AboutSection() {
             </p>
             <p>
               With experience delivering quality and innovative services, we
-              help small, medium-sized enterprises, and government institutions
-              create and deliver impeccable prints and branding solutions that
-              are affordable, effective, and efficient.
+              help small, medium-sized enterprises, corporate organizations, and
+              government institutions create and deliver impeccable prints and
+              branding solutions that are affordable, effective, and efficient.
             </p>
             <div className="pt-1">
               <Link

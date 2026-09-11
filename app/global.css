@@ -93,6 +93,68 @@ option {
       transform: translateY(0);
     }
   }
+
+  /* Infinite logo ticker. The track carries two identical copies of the list
+     and travels exactly half its own width, so the moment the animation
+     restarts the second copy is sitting where the first began. */
+  .marquee {
+    position: relative;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 6%,
+      #000 94%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 6%,
+      #000 94%,
+      transparent 100%
+    );
+  }
+
+  .marquee-viewport {
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: marquee-scroll var(--marquee-duration, 42s) linear infinite;
+    will-change: transform;
+  }
+
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee-scroll {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  /* No automatic motion: leave a single static row the reader can swipe. */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-viewport {
+      overflow-x: auto;
+    }
+
+    .marquee-track {
+      animation: none;
+    }
+
+    .marquee-track > [aria-hidden="true"] {
+      display: none;
+    }
+  }
 }
 
 /* For data picker */

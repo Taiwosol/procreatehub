@@ -1,4 +1,5 @@
 import HeroCinematic from "./__components/HeroCinematic";
+import LogoMarquee from "./__components/LogoMarquee";
 import AboutSection from "./__components/AboutSection";
 import GallerySection from "./__components/GallerySection";
 // import Selection from "./__components/Selection";
@@ -11,6 +12,8 @@ export default function Home() {
   return (
     <>
       <HeroCinematic />
+
+      <LogoMarquee />
 
       <AboutSection />
 

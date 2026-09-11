@@ -21,12 +21,12 @@ const faqs = [
   {
     question: "What if there's an issue with my order after delivery?",
     answer:
-      "Quality is non-negotiable for us. Every order goes through a multi-stage quality check before it leaves our studio. If you do encounter any defect or error on our part, please reach out within 48 hours of delivery with photos. We'll review it immediately and either re-produce the affected items at no extra cost or issue a refund, whichever you prefer.",
+      "Quality is non-negotiable for us. Every order goes through a multi-stage quality check before it leaves our studio. If you do encounter any defect or error on our part, please reach out within 24hours of delivery with photos or video. We'll review it immediately and re-produce the affected items at no extra cost, if the fault falls on the brand.",
   },
   {
     question: "Can you handle corporate bulk orders and recurring projects?",
     answer:
-      "Yes. We work with SMEs, corporate organizations, and government institutions on retainer and bulk-volume projects — including annual stationery sets, marketing collateral, event branding, merchandise rollouts, and regular print runs. We offer preferential pricing, dedicated account management, and scheduled production to keep your brand assets consistent year-round.",
+      "Yes. We work with SMEs, corporate organizations, and government institutions on retainer and bulk-volume projects, including annual stationery sets, marketing collateral, event branding, merchandise rollouts, and regular print runs. We offer preferential pricing and scheduled production to keep your brand assets consistent year-round.",
   },
   {
     question: "How do I get started or request a quote?",
