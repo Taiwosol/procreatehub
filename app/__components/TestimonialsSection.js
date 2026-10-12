@@ -6,7 +6,7 @@ import habitualOrganics from "../../public/habitual-organics.jpeg";
 const testimonials = [
   {
     quote:
-      "From signage to corporate gifting, ProCr8Hub handled every aspect of our nationwide rebrand flawlessly. Their logistics team ensured timely delivery across multiple states, and the quality was consistent everywhere. Highly recommended for large-scale projects.",
+      "Working with ProCr8Hub was the best thing that happened to us in 2020. Thank you for the quality services and awesome deliveries.",
     name: "Temitope Ijeh",
     role: "Founder/CEO Habitual Organics",
     image: habitualOrganics,
@@ -22,7 +22,14 @@ const testimonials = [
     quote:
       "A print partner I can always count on. I’ve been using Procr8Hub for years, and they’ve been such a reliable part of my business journey. They’ve always delivered quality work with great attention to detail and professionalism. I know I can count on them to get the job done right, and that means a lot when you’re running a business.",
     name: "Tina Obiora",
-    role: "Founder, CEO of Habitual Organics",
+    role: "Founder, CEO of Sprout Media",
+    image: tinaObiora,
+  },
+  {
+    quote:
+      "You can always trust ProCr8Hub with excellent customer service. I did, and I've never been disappointed. They are always willing to go the extra mile to ensure that their clients are satisfied. I highly recommend them for anyone looking for a reliable and professional service.",
+    name: "Bukola Lawal",
+    role: "Founder, CEO of Crispy Corner Grills",
     image: tinaObiora,
   },
 ];
