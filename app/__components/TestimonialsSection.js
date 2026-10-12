@@ -1,29 +1,29 @@
 import Image from "next/image";
-import tinaObiora from "../../public/tina-obiora.jpeg";
-import leadOperation from "../../public/lead-operation-img.jpg";
-import officeAssistant from "../../public/office-assistant.jpg";
+import tinaObiora from "../../public/tina-obiora.jpg";
+import everythingZee from "../../public/everything-zee.jpg";
+import habitualOrganics from "../../public/habitual-organics.jpeg";
 
 const testimonials = [
   {
     quote:
+      "From signage to corporate gifting, ProCr8Hub handled every aspect of our nationwide rebrand flawlessly. Their logistics team ensured timely delivery across multiple states, and the quality was consistent everywhere. Highly recommended for large-scale projects.",
+    name: "Temitope Ijeh",
+    role: "Founder/CEO Habitual Organics",
+    image: habitualOrganics,
+  },
+  {
+    quote:
       "ProCr8Hub is efficient in top notch quality branding. The process was smooth from start to finish, and every delivery came in with a strong attention to detail. If you're looking for a team that can translate ideas into a clean, premium brand presence, they're the right choice.",
+    name: "Zainab Elegushi",
+    role: "Founder/CEO Everything by Zee",
+    image: everythingZee,
+  },
+  {
+    quote:
+      "A print partner I can always count on. I’ve been using Procr8Hub for years, and they’ve been such a reliable part of my business journey. They’ve always delivered quality work with great attention to detail and professionalism. I know I can count on them to get the job done right, and that means a lot when you’re running a business.",
     name: "Tina Obiora",
     role: "Founder, CEO of Habitual Organics",
     image: tinaObiora,
-  },
-  {
-    quote:
-      "Working with ProCr8Hub on our packaging redesign was a game-changer. They understood our brand vision immediately and delivered packaging that not only looks stunning on shelves but also tells our story perfectly. Truly exceptional craftsmanship.",
-    name: "Marcus Chen",
-    role: "Creative Director, Lumina Cosmetics",
-    image: leadOperation,
-  },
-  {
-    quote:
-      "From signage to corporate gifting, ProCr8Hub handled every aspect of our nationwide rebrand flawlessly. Their logistics team ensured timely delivery across multiple states, and the quality was consistent everywhere. Highly recommended for large-scale projects.",
-    name: "Sarah Wellington",
-    role: "Head of Marketing, Northwind Retail Group",
-    image: officeAssistant,
   },
 ];
 
