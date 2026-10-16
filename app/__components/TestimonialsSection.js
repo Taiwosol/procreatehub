@@ -39,7 +39,7 @@ export default function TestimonialsSection({ limit }) {
 
   return (
     <section className="bg-white text-black py-8 md:py-10">
-      <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-24 md:space-y-32">
+      <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12 md:space-y-32">
         {shown.map((testimonial, index) => (
           <div
             key={index}
@@ -60,7 +60,7 @@ export default function TestimonialsSection({ limit }) {
 
             {/* Quote — sits flush with the top of the portrait, attribution with its bottom */}
             <div className="order-1 md:order-2 flex flex-col justify-between gap-8">
-              <div className="space-y-1 lg:space-y-2">
+              <div className="space-y-0 md:space-y-1 lg:space-y-2">
                 <div className="text-4xl md:text-5xl lg:text-6xl leading-none">
                   "
                 </div>

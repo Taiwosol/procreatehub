@@ -208,7 +208,7 @@ export default function Page() {
       <ScrollReveal>
         <section className="pb-8 md:pb-10 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 md:mb-16">
               <h2 className="text-2xl font-medium text-neutral-800">
                 The Result
               </h2>

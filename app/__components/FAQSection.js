@@ -47,8 +47,8 @@ export default function FAQSection() {
       <div className=" mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
-            <p className="text-xs text-black mb-6">FAQ</p>
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-8 tracking-tight text-black">
+            <p className="text-xs text-black mb-2 md:mb-6">FAQ</p>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-medium mb-3 md:mb-8 tracking-tight text-black">
               Frequently Asked Questions
             </h2>
             <p className="text-xs md:text-sm leading-relaxed text-black">
